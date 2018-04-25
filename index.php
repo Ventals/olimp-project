@@ -11,8 +11,8 @@
   use Auth0\SDK\Auth0;
 ##############
 
-$query = "INSERT INTO `users` (`id`, `token`, `role`, `given_name`, `last_name`) VALUES (NULL, 'token', 'token', 'Miko', '1')";
-mysqli_query($link, $query);
+	$query = "INSERT INTO `users` (`id`, `token`, `role`, `given_name`, `last_name`) VALUES (NULL, 'token', 'token', 'Miko', '1')";
+	mysqli_query($link, $query);
 
 ###############
 
