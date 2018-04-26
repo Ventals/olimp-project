@@ -9,13 +9,6 @@
   require __DIR__ . '/dotenv-loader.php';
 
   use Auth0\SDK\Auth0;
-##############
-
-$query = "INSERT INTO `users` (`id`, `token`, `role`, `given_name`, `last_name`) VALUES (NULL, 'token', 'token', 'Miko', '1')";
-mysqli_query($link, $query);
-
-###############
-
 
   $domain        = getenv('AUTH0_DOMAIN');
   $client_id     = getenv('AUTH0_CLIENT_ID');
@@ -62,19 +55,45 @@ mysqli_query($link, $query);
         <div class="container">
             <div class="login-page clearfix">
               <?php if(!$userInfo): ?>
-              <div class="login-box auth0-box before">
-                <img src="https://i.cloudup.com/StzWWrY34s.png" />
-                <h3>Auth0 Example</h3>
-                <p>Zero friction identity infrastructure, built for developers</p>
-                <a class="btn btn-primary btn-lg btn-login btn-block" href="login.php">Sign In</a>
-              </div>
+              <script src="https://cdn.auth0.com/js/lock/11.3.0/lock.min.js"></script>
+              <script>
+                // Initializing our Auth0Lock
+                var lock = new Auth0Lock(
+                  '4p3SIDzPf50lm2pZx9RDI1gDsdHacbme',
+                  'vnzquest.eu.auth0.com'
+                );
+
+                // Listening for the authenticated event
+                lock.on("authenticated", function(authResult) {
+                  // Use the token in authResult to getUserInfo() and save it to localStorage
+                  lock.getUserInfo(authResult.accessToken, function(error, profile) {
+                    if (error) {
+                      // Handle error
+                      return;
+                    }
+
+                    document.getElementById('nick').textContent = profile.nickname;
+
+                    localStorage.setItem('accessToken', authResult.accessToken);
+                    localStorage.setItem('profile', JSON.stringify(profile));
+                  });
+                });
+
+                lock.show();
+              </script>
+              <button onclick="lock.show();">Login</button>
               <?php else: ?>
               <div class="logged-in-box auth0-box logged-in">
                 <h1 id="logo"><img src="//cdn.auth0.com/samples/auth0_logo_final_blue_RGB.png" /></h1>
                 <img class="avatar" src="<?php echo $userInfo['picture'] ?>"/>
-                <h2>Welcome <span class="nickname"><?php echo $userInfo['nickname']; echo $userInfo['sub']; ?></span></h2>
+                <h2>Welcome <span class="nickname"><?php echo $userInfo['nickname']; ?></span></h2>
                 <a class="btn btn-warning btn-logout" href="/logout.php">Logout</a>
               </div>
+              <form action="/createUser.php" method="POST">
+                Имя: <input type="text" name="given_name" required="required" />
+                Фамилия: <input type="text" name="last_name" required="required" />
+                <input type="submit" value="Продовжити регістрацію">
+              </form>
               <?php endif ?>
             </div>
         </div>

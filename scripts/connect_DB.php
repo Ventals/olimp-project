@@ -1,4 +1,10 @@
-<?
+<?php
+	## function declare
+	function createUser($link, $token, $given_name, $last_name) {
+		$query = "INSERT INTO `users` (`id`, `token`, `role`, `given_name`, `last_name`) VALUES (NULL, '$token', '', '$given_name', '$last_name');";
+		mysqli_query($link, $query);
+		
+	}
 
 	$host = "127.0.0.1";
 	$login = "root";
