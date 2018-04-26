@@ -1,6 +1,6 @@
 <?
 
-	$host = "127.0.0.1";
+	$host = "https://frozen-reef-64159.herokuapp.com";
 	$login = "root";
 	$password = "";
 	$DB = "olimp-project-backend";
