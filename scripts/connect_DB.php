@@ -6,13 +6,13 @@
 		
 	}
 
-	$host = "127.0.0.1";
-	$login = "root";
-	$password = "";
-	$DB = "olimp-project-backend";
-	$link = mysqli_connect($host, $login, $password, $DB);
+	$host = "mj235895.mysql.ukraine.com.ua";
+	$login = "mj235895_stud18";
+	$password = "uad2lfjh";
+	$DB = "mj235895_stud18";
+	$DB_CONNECTION = mysqli_connect($host, $login, $password, $DB);
 
-	if (!$link) {
+	if (!$DB_CONNECTION) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
     echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
     echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;

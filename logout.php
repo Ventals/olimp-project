@@ -27,5 +27,7 @@ $auth0 = new Auth0([
 $auth0->logout();
 $return_to = 'http://' . $_SERVER['HTTP_HOST'];
 $logout_url = sprintf('http://%s/v2/logout?client_id=%s&returnTo=%s', $domain, $client_id, $return_to);
+
 header('Location: ' . $logout_url);
+
 die();
