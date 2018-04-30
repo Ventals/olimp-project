@@ -1,0 +1,381 @@
+.block1 {
+	background-image: url("images/back1.jpg");
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	margin-top: -1vw;
+	padding-top: 13vw;
+}
+.block2 {
+	background-image: url("images/back3.jpg");
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	padding-top: 13vw;
+}
+.block3 {
+	background-image: url("images/back2.jpg");
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	padding-top: 5vw;
+}
+.buttons {
+	width: 30%;
+	height: 3vw;
+	padding-left: 70%;
+	border-bottom: 0.1vw solid white;
+	position: fixed;
+	top: 0;
+}
+.buttons li {
+	list-style: none;
+	float: left;
+	margin-top: 1vw;
+}
+.in {
+	display: block;
+	background-image: url("images/btn1.jpg");
+	background-size: 100%;
+	width: 2vw;
+	height: 2.3vw;
+	border-radius: 0.3vw;
+	margin-top: -0.3vw;
+}
+.in:hover {
+	background-image: url("images/btn1h.jpg");
+	transition: 0.4s;
+}
+.in:active {
+	background-image: url("images/btn1a.jpg");
+}
+.reg {
+	display: block;
+	background-image: url("images/btn2.jpg");
+	background-size: 100%;
+	width: 6vw;
+	height: 2.3vw;
+	border-radius: 0.3vw;
+	margin-left: 0.6vw;
+	margin-top: -0.3vw;
+}
+.red:hover {
+	background-image: url("images/btn2h.jpg");
+	transition: 0.4s;
+}
+.reg:active {
+	background-image: url("images/btn2a.jpg");
+}
+.text {
+	font-family: Century Gothic;
+	color: white;
+	font-size: 1.5vw;
+	margin-left: 20%;
+	width: 45vw;
+}
+.head {
+	font-family: Verdana;
+	color: white;
+	font-size: 2vw;
+	display: block;
+	border-bottom: 0.1vw solid white;
+	padding-bottom: 0.2vw;
+	width: 60%;
+}
+.row {
+	margin-left: 46%;
+	margin-top: 14%;
+	display: block;
+	width: 2vw;
+	height: 4.9vw;
+	background-image: url("images/row.png");
+	background-size: 93%;
+	background-position: center;
+	position: fixed;
+} 
+.row:hover {
+	background-image: url(images/rowh.png);
+	transition: 0.4s;
+}
+.sbtn {
+	position: absolute;
+	width: 2%;
+	height: 6vw;
+	margin-left: 1vw;
+	margin-top: 10%;
+	position: fixed;
+}
+.sbtn a {
+	display: block;
+	height: 0.8vw;
+	width: 0.8vw;
+	margin-top: 1vw;
+	border-radius: 1vw;
+	background-color: white;
+	opacity: 0.8;
+}
+.sbtn li {
+	list-style: none;
+}
+.logo {
+	display: block;
+	width: 13vw;
+	height: 1.7vw;
+	background-image: url("images/logo.png");
+	background-size: 100%;
+	float: left;
+	margin-left: -65vw;
+}
+.img1 {
+	display: block;
+	width: 8vw;
+	height: 26.3vw;
+	background-image: url("images/human2.png");
+	background-size: 100%;
+	float: right;
+	margin-right: -30%;
+	margin-top: -40%;
+}
+.img2 {
+	display: block;
+	width: 8vw;
+	height: 19vw;
+	background-image: url("images/human.png");
+	background-size: 100%;
+	float: right;
+	margin-right: -30%;
+	margin-top: -40%;
+}
+.img1:hover {
+	transform: scale(1.1, 1.1);
+	transition: 0.5s;
+}
+.img2:hover {
+	transform: scale(1.1, 1.1);
+	transition: 0.5s;
+}
+.img1:hover .message {
+	margin-top: 0;
+	opacity: 1;
+	transition: 0.9s opacity;
+}
+.img2:hover .message1 {
+	margin-top: 0;
+	opacity: 1;
+	transition: 0.9s opacity;
+}
+.message {
+	display: block;
+	text-align: center;
+	width: 10vw;
+	background-color: white;
+	color: gray;
+	font-family: Comic Sans MS;
+	font-size: 1vw;
+	padding: 2.5vw;
+	border-radius: 6vw;
+	position: absolute;
+	margin-top: -500%;
+	opacity: 0;
+	margin-left: 5vw;
+}
+.message1 {
+	display: block;
+	text-align: center;
+	width: 13vw;
+	background-color: white;
+	color: gray;
+	font-family: Comic Sans MS;
+	font-size: 1vw;
+	padding: 2.5vw;
+	border-radius: 6vw;
+	position: absolute;
+	margin-top: -500%;
+	opacity: 0;
+	margin-left: 6vw;
+}
+.registrationFormBlock {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top: 5%;
+	text-align: center;
+}
+.registrationFormBlock p{
+	color: white;
+	font-family: Verdana;
+	font-size: 1.7vw;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+	border-bottom: 0.1vw solid white;
+}
+.registrationFormSwitchButtons a {
+	float: left;
+}
+.registrationFormSwitchButtons {
+	margin-left: 17.5%;
+}
+.registrationForm {
+	margin-top: 5%;
+}
+.input {
+	float: bottom;
+	width: 64%;
+	height: 2.5vw;
+	border-radius: 0.5vw;
+	margin-bottom: 0.8vw;
+	box-shadow: 0.1vw 0.1vw 0.1vw crimson;
+	border: none;
+	color: crimson;
+	font-size: 2vw;
+	font-family: Century Gothic;
+	padding: 0.2vw;
+  }
+.input:focus {
+	border-radius: 0.5vw;
+	margin-bottom: 0.8vw;
+	box-shadow: 0.3vw 0.3vw 0.1vw crimson;
+	border: none;
+	outline: 0;
+}
+.in1 {
+	display: block;
+	background-image: url("images/in.png");
+	background-size: 100%;
+	width: 13.2vw;
+	height: 3vw;
+}
+.reg1 {
+	display: block;
+	background-image: url("images/reg.png");
+	background-size: 100%;
+	width: 13.2vw;
+	height: 3vw;
+	margin-left: 0.5vw;
+}
+.in1:hover {
+	background-image: url("images/inh.png");
+	cursor: pointer;
+	transition: 0.4s;
+}
+.in1:active {
+	background-image: url("images/inp.png");
+}
+.reg1:hover {
+	background-image: url("images/regh.png");
+	cursor: pointer;
+	transition: 0.4s;
+}
+.reg1:active {
+	background-image: url("images/regp.png");
+}
+.go1 {
+	display: block;
+	background-image: url("images/quest.png");
+	background-size: 100%;
+	width: 29.5vw;
+	height: 3vw;
+	margin-left: 17.5%;
+	margin-top: -0.1vw;
+}
+.go1:hover {
+	background-image: url("images/questh.png");
+	transition: 0.4s;
+}
+.go1:active{
+	background-image: url("images/questa.png");
+}
+.orline {
+	display: block;
+	background-image: url("images/formborder.png");
+	background-size: 100%;
+	width: 32vw;
+	height: 0.8vw;
+	margin-left: 17.5%;
+	margin-top: -0.4vw;
+}
+.soc {
+	margin-left: 17.5%;
+	margin-top: 0.5vw;
+}
+.soc li {
+	list-style: none;
+	float: left;
+	margin-right: 2vw;
+	display: block;
+	width: 9.4vw;
+	height: 3vw;
+}
+.fb {
+	background-image: url("images/fb.png");
+	background-size: 100%;
+}
+.fb:hover {
+	background-image: url("images/fbh.png");
+	transition: 0.4s;
+}
+.fb:active {
+	background-image: url("images/fba.png");
+}
+.tw {
+	background-image: url("images/tw.png");
+	background-size: 100%;
+}
+.tw:hover {
+	background-image: url("images/twh.png");
+	transition: 0.4s;
+}
+.tw:active {
+	background-image: url("images/twa.png");
+}
+
+.goo {
+	background-image: url("images/goog.png");
+	background-size: 100%;
+}
+.goo:hover {
+	background-image: url("images/googh.png");
+	transition: 0.4s;
+}
+.goo:active {
+	background-image: url("images/googa.png");
+}
+.form {
+	display: block;
+	text-align: center;
+	width: 20vw;
+	height: 21vw;
+	padding: 1vw;
+	background-color: white;
+	border-radius: 1vw;
+	color: black;
+	font-size: 1.5vw;
+	font-family: Comic Sans Ms;
+	position: absolute;
+	margin-left: -2vw;
+	margin-top: 3.5vw;
+	box-shadow: 0.2vw 0.2vw 0.2vw crimson;
+	border-top: 0.1vw solid crimson;
+	border-left: 0.1vw solid crimson;
+	margin-left: -500%;
+	transition: 0.5s;
+}
+.out {
+	display: block;
+	height: 3.5vw;
+	width: 1vw;
+	background-image: url("images/regbtnp.png");
+	background-size: 99%;
+	position: absolute;
+	margin-top: 1.5vw;
+	margin-left: -500%;
+	transition: 0.5s;
+}
+.out:hover {
+	background-image: url("images/regbtnh.png");
+	transition: 0.4s;
+}
+.out:active {
+	background-image: url("images/regbtna.png");
+}
