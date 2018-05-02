@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	background-image: url("images/back1.jpg");
+}
+.calculator {
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+	text-align: center;
+}
+.calculator li {
+	list-style: none;
+	float: bottom;
+}
+.bal {
+	width: 60%;
+	margin-right: 20%;
+	margin-left: 20%;
+	border-radius: 0.5vw;
+	height: 2.5vw;
+	padding: 0.5vw;
+	border: none;
+	color: crimson;
+	font-family: Century Gothic;
+	font-size: 1.5vw;
+	margin-bottom: 4%;
+}
+.bal:focus {
+	border-radius: 0.5vw;
+	margin-bottom: 4%;
+	box-shadow: 0.3vw 0.3vw 0.1vw crimson;
+	border: none;
+	outline: 0;
+}
+button {
+	margin-bottom: 3%;
+	width: 30%;
+	height: 3vw;
+	border-radius: 0.5vw;
+	border: 0.1vw solid crimson;
+	color: crimson;
+	font-family: Century Gothic;
+	font-size: 1.5vw;
+	background-color: white;
+}
+button:hover {
+	cursor: pointer;
+}
+.res {
+	width: 30%;
+	margin-right: 40%;
+	margin-left: 35%;
+	border-radius: 0.5vw;
+	height: 2.5vw;
+	padding: 0.5vw;
+	border: none;
+	color: crimson;
+	font-family: Century Gothic;
+	font-size: 1.5vw;
+}
+.res:focus {
+	border-radius: 0.5vw;
+	margin-bottom: 0.8vw;
+	box-shadow: 0.3vw 0.3vw 0.1vw crimson;
+	border: none;
+	outline: 0;
+}
+.head1 {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	color: white;
+	font-family: Verdana;
+	font-size: 2vw;
+	text-align: center;
+}
+.table {
+	position: absolute;
+	text-align: center;
+	display: block;
+	background-color: #FFA07A;
+	width: 20%;
+	padding: 0.1vw;
+	height: 6%;
+	color: white;
+	font-size: 1.1vw;
+	border-radius: 0.5vw;
+	text-align: center;
+	margin-top: 15%;
+	margin-left: 70%;
+	border: 0.1vw solid crimson;
+	z-index: 10;
+}
+.table:hover {
+	cursor: pointer;
+	background-color: #E9967A;
+	transition: 0.5s;
+}
+.baltab {
+	position: absolute;
+	background-image: url("images/table.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 37%;
+	height: 47vw;
+	padding: 1vw;
+	border-radius: 0.5vw;
+	top: 2%;
+	margin-left: -500%;
+	z-index: 40;
+	transition: 0.3s;
+}
+.exit{
+	position: absolute;
+	background-image: url('images/regbtnp.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 3%;
+	height: 6%;
+	margin-left: -500%;
+	top: 0;
+	z-index: 40;
+	transition: 0.3s;
+}
+.exit:hover {
+	cursor: pointer;
+	background-image: url("images/regbtnh.png");
+	transition: 0.5s;
+}
+.exit:active {
+	background-image: url("images/regbtna.png");
+	transition: 0.5s;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number] { 
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    appearance: none;
+}

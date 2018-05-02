@@ -28,6 +28,7 @@ for (var i = 0; i < linkNav.length; i++) {
 		jQuery('.reg1').css("background-image", "url(images/reg.png)");
 		jQuery('.reg1').css("height", "3vw");
 		jQuery('.form').css("margin-left", "-500%");
+		jQuery('.out').css("margin-left", "-500%");
 	});
 	jQuery('.reg1').on('click', function(){
 		jQuery(this).css("background-image", "url(images/rega.png)");
@@ -66,11 +67,52 @@ for (var i = 0; i < linkNav.length; i++) {
 		jQuery('.reg1').css("background-image", "url(images/rega.png)");
 		jQuery('.reg1').css("height", "3.3vw");
 		jQuery('.out').css("margin-left", "40%");
+		jQuery('.btn3').css("transform", "scale(1.5, 1.5)");
+		jQuery('.btn3').css("opacity", "1");
+		jQuery('.btn1').css("transform", "scale(1, 1)");
+		jQuery('.btn1').css("opacity", "0.8");
+		jQuery('.btn2').css("transform", "scale(1, 1)");
+		jQuery('.btn2').css("opacity", "0.8");
+	});
+	jQuery('.in').on('click', function(){
+		jQuery('.btn3').css("transform", "scale(1.5, 1.5)");
+		jQuery('.btn3').css("opacity", "1");
+		jQuery('.btn1').css("transform", "scale(1, 1)");
+		jQuery('.btn1').css("opacity", "0.8");
+		jQuery('.btn2').css("transform", "scale(1, 1)");
+		jQuery('.btn2').css("opacity", "0.8");
 	});
 	jQuery('.out').on('click', function(){
 		jQuery(this).css("margin-left", "-500%");
 		jQuery('.reg1').css("background-image", "url(images/reg.png)");
 		jQuery('.reg1').css("height", "3vw");
 		jQuery('.form').css("margin-left", "-500%");
+	});
+	jQuery('.block1').hover(function(){
+		jQuery('.btn1').css("transform", "scale(1.5, 1.5)");
+		jQuery('.btn1').css("opacity", "1");
+		jQuery('.btn1').css("transition", "0.5s");
+		jQuery('.btn2').css("transform", "scale(1, 1)");
+		jQuery('.btn2').css("opacity", "0.8");
+		jQuery('.btn3').css("transform", "scale(1, 1)");
+		jQuery('.btn3').css("opacity", "0.8");
+	});
+	jQuery('.block2').hover(function(){
+		jQuery('.btn2').css("transform", "scale(1.5, 1.5)");
+		jQuery('.btn2').css("opacity", "1");
+		jQuery('.btn2').css("transition", "0.5s")
+		jQuery('.btn1').css("transform", "scale(1, 1)");
+		jQuery('.btn1').css("opacity", "0.8");
+		jQuery('.btn3').css("transform", "scale(1, 1)");
+		jQuery('.btn3').css("opacity", "0.8");
+	});
+	jQuery('.block3').hover(function(){
+		jQuery('.btn3').css("transform", "scale(1.5, 1.5)");
+		jQuery('.btn3').css("opacity", "1");
+		jQuery('.btn3').css("transition", "0.5s")
+		jQuery('.btn1').css("transform", "scale(1, 1)");
+		jQuery('.btn1').css("opacity", "0.8");
+		jQuery('.btn2').css("transform", "scale(1, 1)");
+		jQuery('.btn2').css("opacity", "0.8");
 	});
 });

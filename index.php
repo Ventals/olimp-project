@@ -5,8 +5,6 @@
 
   require __DIR__ . '/dotenv-loader.php';
 
-  require __DIR__ . "/scripts/connect_DB.php";
-
   use Auth0\SDK\Auth0;
 
   $domain        = getenv('AUTH0_DOMAIN');
@@ -37,24 +35,32 @@
 ?>
 <html>
 <head>
-    <script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_c.css">
+    <link rel="alternate stylesheet" type="text/css" href="stylecab.css" id="cab_style">
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/script1.js"></script>
+    <script type="text/javascript" src = "js/cabinetScript.js"> </script>
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
     
     <?php if(!$userInfo): ?>
       <!-- ************************************************************************* -->
       <!-- ***********************FIRST VISIT PAGE********************************** -->
+      <script>
+        document.getElementById("cab_style").setAttribute('rel', 'alternate stylesheet');
+      </script>
     <div class="block1" id="block1">
       <div class = "buttons">
-        <p class = "logo">  </p>
+        <p class = "logo-main">  </p>
         <li><a href="#registrationFormBlock">
           <ul class="in">
             
           </ul>
          </a></li>
-        <li><a href="#registrationFormBlock">
+        <li><a  href="#registrationFormBlock">
           <ul class="reg">
 
           </ul>
@@ -65,14 +71,14 @@
         <li><a href="#block2" class="btn2"></a></li>
         <li><a href="#registrationFormBlock" class="btn3"></a></li>
       </div>
-      <div class = "text"> 
-        <p class="head">OlimpProject</p>
-        <p> Тут должен быть какой-то текст про нелегкую судьбу школьников, которые никак не могут решить в какой институт подавать заявку, или вообще даже не умеют ее подавать. А в конце типа "Якщо ві потрапили у таку ситуацію, наш квест допоможе вам її вирішити."</p>
-        <ul class="img1">
+      <ul class="img1">
           <ul class="message">
             Тут может быть каокое-то сообщене, ссылка, или кнопка
           </ul>
         </ul>
+      <div class = "text"> 
+        <p class="head">OlimpProject</p>
+        <p> В наш час школярам дуже важко зрозуміти ким вони хочуть стати, і як вірно вибрати професію. Всі ці складнощі під час вступної компанії дуже збивають з пантилику. Якщо ж і ви потрапили у таку ситуацію, наш квест допоможе вам її вирішити."</p>
       </div>
       <a href = "#registrationFormBlock">
         <ul class="row">
@@ -84,57 +90,123 @@
 
 
     <div class = "block2" id="block2">
-      <div class = "text"> 
-        <p class="head">Що ви дізнаєтесь завершивши наш квест?</p>
-        <p> Ну и тут собственно про возможности нашего квеста. Равным образом начало повседневой работы по формированию играет важную роль в формировании форм развития. Товарищи! Новая модель организационной деятельрости позволяет выполнять важные задания по разработке направлений прогрессивного развития. С другой стороны</p>
-        <ul class="img2">
+      <ul class="img2">
           <ul class="message1">
             Кстати таким, или похожим образом, еще немного допиленым, можно реализовать анимацию в квесте
           </ul>
         </ul>
+      <div class = "text"> 
+        <p class="head">Що ви дізнаєтесь завершивши наш квест?</p>
+        <p> По закінченню цього квесту ви зможете вирішити де вчитися, зрозумієте як подавати заявку на вступ , будете розуміти свої шанси поступити на бюджет та ознайомитесь з майбутнью професією.</p>
       </div>
     </div>
 
-    <div class ="block3" id="registrationFormBlock">
-      <div class ="registrationFormBlock"> 
+    <div class = "block3" id="registrationFormBlock">
+      <div class = "registrationFormBlock"> 
         <p> Щоб почати квест - увійдіть у свій аккаунт або зареєструйте новий</p>
         <div class= "registrationFormSwitchButtons">
-          <a href="login.php" for="email">
+          <a href="login.php">
           <ul class="in1" id="in1">
             
           </ul>
-        </a>
-        <ul class="out">
-                  
-        </ul>
+          </a>
           <a href="login.php">
             <ul class="reg1">
               
-            </ul>
+          </ul>
           </a>
         </div>
-
+        <form class = "registrationForm">
+          <input type = "text" class="input" placeholder="Ваше пошта" id="email">
+          <input type = "password" class="input" placeholder="Пароль" id="pass">
+          <div class = "orline"></div>
+          <div class="soc">
+            <a href="https://www.facebook.com/"><li class="fb"></li></a>
+            <a href="https://twitter.com/login?lang=ru"><li class="tw"></li></a>
+            <a href="https://myaccount.google.com/?hl=ru"><li class="goo"></li></a>
+          </div>
+        </form>
       </div>
     </div>
    
     <!-- ***********************FIRST VISIT PAGE********************************** -->
     <!-- ************************************************************************* -->
     <?php else: ?>
-      <img class="avatar" src="<?php echo $userInfo['picture'] ?>"/>
-      <h2>Welcome <span class="nickname"><?php echo $userInfo['nickname'] ?></span></h2>
-      <a href="logout.php">logout</a>
-      <?
-        $query = "SELECT `id` FROM `users` WHERE `token` = '".$userInfo['sub']."'";
-        $result = mysqli_query($DB_CONNECTION, $query);
-        if (mysqli_num_rows($result) == 0) {
-          echo "  <form action=\"scripts/createUser.php\" method=\"POST\">
-                      First visit form <br>
-                    <input type=\"name\" name=\"name\" placeholder=\"Name\" /> <br>
-                    <input type=\"surname\" name=\"surname\" placeholder=\"surname\" /> <br>
-                    <input type=\"submit\">
-                  </form>";
-        }
-      ?>
+    <!-- ************************************************************************* -->
+    <!-- ******************************CABINET************************************ -->
+    <script>
+      document.getElementById("cab_style").setAttribute('rel', 'stylesheet');
+    </script>
+    <ul class="out">
+              
+    </ul>
+    <ul class="form">
+    <li>
+      <img src="images/comp.png"> 
+      <h2>Комп'ютер</h2>
+      На комп'ютері ви зможете побачити карту квесту...
+    </li>
+    <li>
+      <img src="images/nout.png">
+      <h2>Ноутбук</h2>
+      На ноутбуці ви знайдете...
+    </li>
+    <li>
+      <img src="images/board.jpg">
+      <h2>Дошка</h2>
+      Дошка показує вам...
+    </li>
+    <li>
+      <img src="images/bag.png">
+      <h2>Портфель</h2>
+      Портфель потрібен для того щоб...
+    </li>
+    <li>
+      <img src="images/zno.png">
+      <h2>Збірник ЗНО</h2>
+      В збірнику тестів ЗНО ви зможете підготуватись до здачі...
+    </li>
+    </ul>
+    <div class="help">
+    Підказка
+    </div>
+    <div class = "room">
+    <div>
+      <p class = "title"> Кімната </p>
+      <a href="logout.php">
+    <div class="logo">
+    </div>
+    </a>
+    </div>
+    <div class="board" id = "table"
+    onmouseover = "tableMouseOver()" onmouseout = "tableMouseOut()" onclick = "tableClick()">
+
+    </div>
+
+    <div class="comp" id = "computer"
+    onmouseover = "computerMouseOver()" onmouseout = "computerMouseOut()"onclick = "computerClick()">
+    </div>
+
+    <div class="laptop" id = "laptop"
+    onmouseover = "laptopMouseOver()" onmouseout = "laptopMouseOut()" onclick = "laptopClick()">
+    </div>
+
+    <div class="zno" id = "ZNO"
+    onmouseover = "ZNOMouseOver()" onmouseout = "ZNOMouseOut()" onclick = "ZNOClick()">
+    </div>
+
+    <div class="bag" id = "briefcase"
+    onmouseover = "briefcaseMouseOver()" onmouseout = "briefcaseMouseOut()" onclick = "briefcaseClick()">
+    </div>
+
+    </div>
+    <a class="link" href = "calculator.html">
+    Розрахунок конкурсного балу
+    </a>
+
+
+    <!-- ************************************************************************* -->
+    <!-- **************************END CABINET************************************ -->
     <?php endif ?>
 </body>
 </html>
