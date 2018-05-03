@@ -87,7 +87,7 @@ body {
  }
  @media only screen and (max-width: 400px) {
  	.in {
- 		background-size: 95%;
+ 		background-size: 94%;
  		height: 5.5vw;
  		width: 8vw;
  		transition: 0.5s;
@@ -238,21 +238,20 @@ body {
 	list-style: none;
 }
 .logo {
+	position: absolute;
 	display: block;
-	width: 45%;
+	width: 15%;
 	height: 90%;
 	background-image: url("images/logo.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	float: left;
-	margin-left: -220%;
+	left: 5%;
 }
 @media only screen and (max-width: 480px) {
  	.logo {
- 		margin-top: 8%;
- 		width: 30%;
- 		height: 80%;
- 		margin-left: -50%;
+ 		width: 20%;
+ 		height: 90%;
  		transition: 0.5s;
  	}
  }
@@ -269,7 +268,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
  	.img1 {
- 		top: 9%;
+ 		top: 11%;
  		margin-left: 40%;
  		height: 50vw;
  		width: 19vw;
@@ -290,6 +289,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
  	.img2 {
+ 		margin-top: 11%;
  		margin-left: 35%;
  		height: 50vw;
  		width: 22vw;
@@ -425,7 +425,7 @@ body {
  		transition: 0.5s;
  	}
  }
-.registrationFormSwitchButtons label{
+.registrationFormSwitchButtons a{
 	float: left;
 	width: 39%;
 }
