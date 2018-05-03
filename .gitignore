@@ -1,2 +1,3 @@
-vendor/
-.env
+exec.sh
+exec.ps1
+.dockerignore
