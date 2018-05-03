@@ -237,7 +237,7 @@ body {
 .sbtn li {
 	list-style: none;
 }
-.logo {
+.logo-main{
 	position: absolute;
 	display: block;
 	width: 15%;
@@ -659,7 +659,7 @@ body {
 @media only screen and (max-width: 720px) {
  	.out {
  		background-size: 60%;
- 		transition: 0.5s;
+ 		transition: 0.6s;
  	}
  }
 @media only screen and (max-width: 480px) {
@@ -670,7 +670,7 @@ body {
  }
 .out:hover {
 	background-image: url("images/regbtnh.png");
-	transition: 0.4s;
+	transition: 0.5s;
 }
 .out:active {
 	background-image: url("images/regbtna.png");
