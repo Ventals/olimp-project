@@ -237,7 +237,7 @@ body {
 .sbtn li {
 	list-style: none;
 }
-.logo {
+.logo-main{
 	position: absolute;
 	display: block;
 	width: 15%;
