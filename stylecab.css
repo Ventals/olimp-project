@@ -51,18 +51,17 @@ body {
 }
 .form li img {
 	width: 12%;
-	height: 17%;
 	border-radius: 0.5vw;
 	float: left;
 	margin-right: 2%;
 }
 .form li img:hover {
-	-webkit-transform: scale(1.5, 1.5);
-	        transform: scale(1.5, 1.5);
+	transform: scale(1.5, 1.5);
 	transition: 0.5s;
 }
 .form {
 	z-index: 50;
+	text-align: left;
 	display: block;
 	width: 60%;
 	height: 41vw;
@@ -104,10 +103,13 @@ body {
 	height: 25%;
 	margin-left: 60%;
 	margin-top: 9%;
+	color: #FFFFFF;
+	font-size: 1.3vw;
+	font-family: Comic Sans Ms;
+	padding: 2%;
 }
 .board:hover {
-	-webkit-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
 	transition: 0.5s;
 }
 .comp {
@@ -123,8 +125,7 @@ body {
 	margin-top: 26%;
 }
 .comp:hover {
-	-webkit-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
 	transition: 0.5s;
 }
 .laptop {
@@ -140,8 +141,7 @@ body {
 	margin-top: 32%;
 }
 .laptop:hover {
-	-webkit-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
 	transition: 0.5s;
 }
 .zno {
@@ -157,8 +157,7 @@ body {
 	margin-top: 9%;
 }
 .zno:hover {
-	-webkit-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
 	transition: 0.5s;
 }
 .bag {
@@ -174,8 +173,7 @@ body {
 	margin-top: 43%;
 }
 .bag:hover {
-	-webkit-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
 	transition: 0.5s;
 }
 .help {
@@ -211,4 +209,122 @@ body {
 .link:hover {
 	color: #F08080;
 	transition: 0.3s;
+}
+.compscreen {
+	z-index: 50;
+	display: block;
+	width: 69%;
+	height: 43.5vw;
+	background-image: url("images/compback.jpg");
+	background-repeat: no-repeat;
+	background-color: #191970;
+	background-size: 100%;
+	border-radius: 1vw;
+	position: absolute;
+	margin-left: -500%;
+	transition: 0.5s;
+	margin-top: 3%;
+	border: 0.4vw solid gray;
+	overflow: hidden;
+}
+.slider {
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-top: 2%;
+	width: 70%;
+	height: 90%;
+	background-color: white;
+	border: 0.1vw solid #87CEFA;
+	border-radius: 0.4vw;
+	overflow: hidden;
+	padding: 4%;
+	padding-top: 1%;
+	background-color: #E0FFFF;
+}
+.prof2 {
+	margin-top: -500%;
+	opacity: 0;
+	transform: scale(0.1, 0.1);
+	transition: 0.5s transform, 0.9s opacity;
+}
+.prof3 {
+	margin-top: -500%;
+	opacity: 0;
+	transform: scale(0.1, 0.1);
+	transition: 0.5s transform, 0.9s opacity;
+}
+.prof1 {
+	opacity: 1;
+	transition: 0.5s transform, 0.9s opacity;
+}
+#next2 {
+	margin-left: -500%;
+}
+#next3 {
+	margin-left: -500%;
+}
+.slider li {
+	position: absolute;
+	list-style: none;
+	text-align: center;
+	width: 50%;
+	height: 77%;
+	margin-left: 6%;
+	margin-right: 10%;
+	border: 0.1vw solid #66CDAA;
+	border-radius: 0.2vw;
+	padding: 2%;
+}
+.slider li img {
+	width: 85%;
+	height: 50%;
+	margin-left: 5%
+	margin-right: 5%;
+	border: 0.1vw solid #66CDAA;
+	border-radius: 0.2vw;
+}
+.slider li p {
+	text-align: left;
+	margin-top: 5%;
+	color: black;
+	font-size: 1.2vw;
+	font-family: Century Gothic;
+}
+.choose {
+	display: block;
+	width: 40%;
+	height: 8%;
+	background-color: #66CDAA;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: Verdana;
+	font-size: 1.2vw;
+	border-radius: 0.4vw;
+	padding: 2%;
+}
+.next {
+	position: absolute;
+	text-decoration: none;
+	display: block;
+	width: 21%;
+	background-color: #66CDAA;
+	text-align: center;
+	color: #FFFFFF;
+	font-family: Verdana;
+	font-size: 1.2vw;
+	border-radius: 0.4vw;
+	padding: 1%;
+	margin-left: 39%;
+	top: 84%;
+}
+.menu {
+	margin-top: 4%;	
+}
+.menu ul {
+	margin-left: 28%;
+}
+.menu ul:hover {
+	cursor: pointer;
+	background-color: #00CED1;
+	transition: 0.5s;
 }
