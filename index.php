@@ -5,6 +5,8 @@
 
   require __DIR__ . '/dotenv-loader.php';
 
+  include_once __DIR__ . "/scripts/connect_DB.php";
+
   use Auth0\SDK\Auth0;
 
   $domain        = getenv('AUTH0_DOMAIN');
