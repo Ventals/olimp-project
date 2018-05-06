@@ -133,6 +133,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
  	.text {
+ 		text-align: center;
  		margin-left: 15%;
  		margin-top: 60%;
  		width: 70%;
@@ -148,9 +149,11 @@ body {
 	border-bottom: 0.1vw solid white;
 	padding-bottom: 0.2vw;
 	width: 60%;
+	font-weight: bold;
 }
 @media only screen and (max-width: 480px) {
  	.head {
+ 		margin-left: 5%;
  		font-size: 4.5vw;
  		width: 90%;
  		transition: 0.5s;
@@ -249,8 +252,9 @@ body {
 	left: 5%;
 }
 @media only screen and (max-width: 480px) {
- 	.logo {
- 		width: 20%;
+ 	.logo-main {
+ 		margin-top: 5%;
+ 		width: 27%;
  		height: 90%;
  		transition: 0.5s;
  	}
@@ -675,3 +679,19 @@ body {
 .out:active {
 	background-image: url("images/regbtna.png");
 }
+.socshare {
+	display: block;
+	width: 65%;
+	color: white;
+	font-family: Century Gothic;
+	font-size: 1vw;
+	margin-left: 17.5%;
+	border-bottom: 0.1vw solid white;
+	padding-bottom: 1%;
+}
+@media only screen and (max-width: 480px) {
+ 	.socshare {
+ 		font-size: 2vw;
+ 		transition: 0.5s;
+ 	}
+ }
