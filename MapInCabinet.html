@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<style>
+			#map{
+				height: 95%;
+				width: 100%;
+			}
+			#title{
+				height: 5%;
+			}
+		</style>
+	</head>
+	<body>
+		<h2 id = "title"> Оберіть ВНЗ </h2>
+		<div id = "map"> </div>
+		<div hidden id = "dialog">
+			<p> <output id = "name"> </output> </p> 
+			<img id = "image">
+			<p> <output id = "description"> </output> </p>
+			<button onclick = "VNZSelected()"> Обрати цей ВНЗ </button>
+			<button onclick = "backToMap()"> Повенутися до мапи </button>
+		</div>
+		<script
+			src = "js/MapInCabinetScript.js"> </script>
+		<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhB6Pq1U-G2R70VstNVDnESvSCePbjQd0&callback=initMap"> </script>
+	</body>
+</html>
