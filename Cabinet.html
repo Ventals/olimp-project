@@ -40,8 +40,6 @@
 					В збірнику тестів ЗНО ви зможете підготуватись до здачі...
 				</li>
 			</ul>
-
-
 			<ul class="compscreen">
 				<ul class="next" id="next1">Наступна професія</ul>
 				<ul class="next" id="next2">Наступна професія</ul>
@@ -81,12 +79,29 @@
 					</ul>
 					</li>
 				</ul>
+			
+
 			</ul>
+			<div class="noutscreen">
+				<p id = "title"> Оберіть ВНЗ </p>
+				<div id = "map"> </div>
+				<div hidden id = "dialog">
+					<p> <output id = "name"> </output> </p> 
+					<img id = "image">
+					<p> <output id = "description"> </output> </p>
+					<button onclick = "VNZSelected()"> Обрати цей ВНЗ </button>
+					<button onclick = "backToMap()"> Повенутися до мапи </button>
+				</div>
+				<script
+					src = "js/MapInCabinetScript.js"> </script>
+				<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhB6Pq1U-G2R70VstNVDnESvSCePbjQd0&callback=initMap"> </script>
+			</div>
+
+
 			<div class="help">
 			Підказка
 		</div>
-
-
 		<div class = "room">
 			<div>
 			<p class = "title"> Кімната </p>
@@ -94,26 +109,26 @@
 			<div class="logo">
 		</div>
 	</a>
+	<a href="StartPageRaedy.html">
+		<div class="exit">
+
 		</div>
-			<div class="board" id = "table"
-			onmouseover = "tableMouseOver()" onmouseout = "tableMouseOut()" onclick = "tableClick()">
+	</a>
+		</div>
+			<div class="board" id = "table">
 
 		</div>
 
-			<div class="comp" id = "computer"
-			onmouseover = "computerMouseOver()" onmouseout = "computerMouseOut()"onclick = "computerClick()">
+			<div class="comp" id = "computer">
 		</div>
 
-			<div class="laptop" id = "laptop"
-			onmouseover = "laptopMouseOver()" onmouseout = "laptopMouseOut()" onclick = "laptopClick()">
+			<div class="laptop" id = "laptop">
 		</div>
 
-			<div class="zno" id = "ZNO"
-			onmouseover = "ZNOMouseOver()" onmouseout = "ZNOMouseOut()" onclick = "ZNOClick()">
+			<div class="zno" id = "ZNO">
 		</div>
 
-			<div class="bag" id = "briefcase"
-			onmouseover = "briefcaseMouseOver()" onmouseout = "briefcaseMouseOut()" onclick = "briefcaseClick()">
+			<div class="bag" id = "briefcase">
 		</div>
 
 		</div>
