@@ -45,16 +45,28 @@ function VNZSelected() {
 				];
 				
 				
+				var center = {
+					lat: 49.0275,
+					lng: 31.482778
+				};
 				var map = new google.maps.Map(document.getElementById('map'), {
 					zoom: 6.5,
-					center: {
-						lat: 49.0275,
-						lng: 31.482778
-					},
+					center,
 					minZoom: 6.5,
 					maxZoom: 10,
 					streetViewControl: false,
 					mapTypeControl: false
+				});
+				var ua = new google.maps.LatLngBounds({
+					lat: 53,
+					lng: 22
+				}, {
+					lat: 44,
+					lng: 41
+				});
+				map.addListener("center_changed", function() {
+					map.panToBounds(ua);
+					map.setZoom(6.5);
 				});
 				for (var i = 0; i < VNZes.length; i++) {
 					let marker = new google.maps.Marker({
