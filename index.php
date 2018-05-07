@@ -58,12 +58,12 @@
     <div class="block1" id="block1">
       <div class = "buttons">
         <p class = "logo-main">  </p>
-        <li><a href="#registrationFormBlock">
+        <li><a href="login.php">
           <ul class="in">
             
           </ul>
          </a></li>
-        <li><a  href="#registrationFormBlock">
+        <li><a  href="login.php">
           <ul class="reg">
 
           </ul>
@@ -120,15 +120,19 @@
           </a>
         </div>
         <form class = "registrationForm">
-          <input type = "text" class="input" placeholder="Ваше пошта" id="email">
-          <input type = "password" class="input" placeholder="Пароль" id="pass">
-          <div class = "orline"></div>
-          <div class="soc">
-            <a href="https://www.facebook.com/"><li class="fb"></li></a>
-            <a href="https://twitter.com/login?lang=ru"><li class="tw"></li></a>
-            <a href="https://myaccount.google.com/?hl=ru"><li class="goo"></li></a>
-          </div>
-        </form>
+	
+					<div class = "orline">
+						
+					</div>
+					<div class="socshare">
+						Поділіться з друзями в соц-мережах
+					</div>
+					<div class="soc">
+						<a href="https://www.facebook.com/"><li class="fb"></li></a>
+						<a href="https://twitter.com/login?lang=ru"><li class="tw"></li></a>
+						<a href="https://myaccount.google.com/?hl=ru"><li class="goo"></li></a>
+					</div>
+				</form>
       </div>
     </div>
    
@@ -170,6 +174,46 @@
       В збірнику тестів ЗНО ви зможете підготуватись до здачі...
     </li>
     </ul>
+	<ul class="compscreen">
+				<ul class="next" id="next1">Наступна професія</ul>
+				<ul class="next" id="next2">Наступна професія</ul>
+				<ul class="next" id="next3">Наступна професія</ul>
+				<ul class="slider">
+					<li class="prof1">
+						<img src="images/prof1.jpg">
+						<p>
+							Юрист - це фахівець в галузі права. Він знає закони і правові норми, вміє їх використовувати і здатний навчати їх основам інших. Це експерт в області юриспруденції, який може займати будь-яку правову посаду, від адвоката до судді. Для цього необхідно отримати вищу юридичну освіту.
+						</p>
+						<ul class="menu">
+						<ul class="choose" id="choose1">
+							Обрати професію
+						</ul>
+					</ul>
+					</li>
+					<li class="prof2">
+						<img src="images/prof2.jpg">
+						<p>
+							Програміст - це фахівець, який займається розробкою програмного забезпечення для персональних, вбудованих, промислових і інших різновидів комп'ютерів, тобто програмуванням. Прикладний - це фахівець, який здійснює розробку і налагодження програм для вирішення різних завдань.
+						</p>
+						<ul class="menu">
+						<ul class="choose" id="choose2">
+							Обрати професію
+						</ul>
+					</ul>
+					</li>
+					<li class="prof3">
+						<img src="images/prof3.jpg" class="bigimg">
+						<p>
+							Механік - кваліфікований робітник, який має професійну освіту і зайнятий обслуговуванням, ремонтом технічних засобів (необов'язково пов'язаних з механізмами), наприклад: автомеханік, авіамеханік, електромеханік, радіомеханік, механік по ремонту побутової техніки і т. Д.
+						</p>
+						<ul class="menu">
+						<ul class="choose" id="choose3">
+							Обрати професію
+						</ul>
+					</ul>
+					</li>
+				</ul>
+			</ul>
     <div class="help">
     Підказка
     </div>
