@@ -5,10 +5,16 @@ jQuery('document').ready(function(){
 		jQuery('.form').css("margin-left", "-500%");
 		jQuery(this).css("margin-left", "-500%");
 		jQuery('.compscreen').css("margin-left", "-500%");
+		jQuery('.noutscreen').css("margin-left", "-500%");
 	});
 	jQuery('.help').on('click', function(){
 		jQuery('.form').css("margin-left", "20%");
 		jQuery('.out').css("margin-left", "80%");
+	});
+	jQuery('.laptop').on('click', function(){
+		jQuery('.noutscreen').css("margin-left", "15%");
+		jQuery('.out').css("margin-left", "83%");
+		jQuery('.out').css("margin-top", "1%");
 	});
 	jQuery('.comp').on('click', function(){
 		jQuery('.compscreen').css("margin-left", "15%");
@@ -55,13 +61,21 @@ jQuery('document').ready(function(){
 	jQuery('#choose1').on('click', function(){
 		var choise = "Ви збираєтесь стати юристом";
 		jQuery('.board').html(choise);
+		jQuery('.out').css("margin-left", "-500%");
+		jQuery('.compscreen').css("margin-left", "-500%");
 	});
 	jQuery('#choose2').on('click', function(){
 		var choise = "Ви збираєтесь стати програмістом";
 		jQuery('.board').html(choise);
+		jQuery('.board').html(choise);
+		jQuery('.out').css("margin-left", "-500%");
+		jQuery('.compscreen').css("margin-left", "-500%");
 	});
 	jQuery('#choose3').on('click', function(){
 		var choise = "Ви збираєтесь стати механіком";
 		jQuery('.board').html(choise);
+		jQuery('.board').html(choise);
+		jQuery('.out').css("margin-left", "-500%");
+		jQuery('.compscreen').css("margin-left", "-500%");
 	});
 });
