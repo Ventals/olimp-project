@@ -214,7 +214,22 @@
 					</li>
 				</ul>
 			</ul>
-    <div class="help">
+    		<div class="noutscreen">
+				<p id = "title"> Оберіть ВНЗ </p>
+				<div id = "map"> </div>
+				<div hidden id = "dialog">
+					<p> <output id = "name"> </output> </p> 
+					<img id = "image">
+					<p> <output id = "description"> </output> </p>
+					<button onclick = "VNZSelected()"> Обрати цей ВНЗ </button>
+					<button onclick = "backToMap()"> Повенутися до мапи </button>
+				</div>
+				<script
+					src = "js/MapInCabinetScript.js"> </script>
+				<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhB6Pq1U-G2R70VstNVDnESvSCePbjQd0&callback=initMap"> </script>
+			</div>
+	<div class="help">
     Підказка
     </div>
     <div class = "room">
@@ -223,7 +238,12 @@
       <a href="logout.php">
     <div class="logo">
     </div>
-    </a>
+	    </a>
+	    <a href="StartPageRaedy.html">
+		<div class="exit">
+
+		</div>
+	</a>
     </div>
     <div class="board" id = "table"
     onmouseover = "tableMouseOver()" onmouseout = "tableMouseOut()" onclick = "tableClick()">
