@@ -1,7 +1,7 @@
 <?php
 	## function declare
 	function createUser($link, $token, $given_name, $last_name) {
-		$query = "INSERT INTO `users` (`id`, `token`, `role`, `given_name`, `last_name`) VALUES (NULL, '$token', 'user', '$given_name', '$last_name');";
+		$query = "INSERT INTO `users` (`id`, `token`, `role`, `given_name`, `last_name`,'choise_sphere') VALUES (NULL, '$token', 'user', '$given_name', '$last_name', '');";
 		mysqli_query($link, $query);
 	}
 

@@ -58,23 +58,23 @@ jQuery('document').ready(function(){
 	function(){
 		jQuery(this).css("background-color", "#66CDAA");
 	});
+
+	var choise_sphere='';
 	jQuery('#choose1').on('click', function(){
-		var choise = "Ви збираєтесь стати юристом";
-		jQuery('.board').html(choise);
+		choise_sphere = "Ви збираєтесь стати юристом";
+		jQuery('.board').html(choise_sphere);
 		jQuery('.out').css("margin-left", "-500%");
 		jQuery('.compscreen').css("margin-left", "-500%");
 	});
 	jQuery('#choose2').on('click', function(){
-		var choise = "Ви збираєтесь стати програмістом";
-		jQuery('.board').html(choise);
-		jQuery('.board').html(choise);
+		choise_sphere = "Ви збираєтесь стати програмістом";
+		jQuery('.board').html(choise_sphere);
 		jQuery('.out').css("margin-left", "-500%");
 		jQuery('.compscreen').css("margin-left", "-500%");
 	});
 	jQuery('#choose3').on('click', function(){
-		var choise = "Ви збираєтесь стати механіком";
-		jQuery('.board').html(choise);
-		jQuery('.board').html(choise);
+		choise_sphere = "Ви збираєтесь стати механіком";
+		jQuery('.board').html(choise_sphere);
 		jQuery('.out').css("margin-left", "-500%");
 		jQuery('.compscreen').css("margin-left", "-500%");
 	});
