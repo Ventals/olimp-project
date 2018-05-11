@@ -50,9 +50,9 @@ function VNZSelected() {
 					lng: 31.482778
 				};
 				var map = new google.maps.Map(document.getElementById('map'), {
-					zoom: 6.5,
+					zoom: 7,
 					center,
-					minZoom: 6.5,
+					minZoom: 7,
 					maxZoom: 10,
 					streetViewControl: false,
 					mapTypeControl: false
@@ -66,7 +66,6 @@ function VNZSelected() {
 				});
 				map.addListener("center_changed", function() {
 					map.panToBounds(ua);
-					map.setZoom(6.5);
 				});
 				for (var i = 0; i < VNZes.length; i++) {
 					let marker = new google.maps.Marker({
