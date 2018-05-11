@@ -144,37 +144,38 @@
     <script>
       document.getElementById("cab_style").setAttribute('rel', 'stylesheet');
     </script>
-    <ul class="out">
-              
-    </ul>
-    <ul class="form">
-    <li>
-      <img src="images/comp.png"> 
-      <h2>Комп'ютер</h2>
-      На комп'ютері ви зможете побачити карту квесту...
-    </li>
-    <li>
-      <img src="images/nout.png">
-      <h2>Ноутбук</h2>
-      На ноутбуці ви знайдете...
-    </li>
-    <li>
-      <img src="images/board.jpg">
-      <h2>Дошка</h2>
-      Дошка показує вам...
-    </li>
-    <li>
-      <img src="images/bag.png">
-      <h2>Портфель</h2>
-      Портфель потрібен для того щоб...
-    </li>
-    <li>
-      <img src="images/zno.png">
-      <h2>Збірник ЗНО</h2>
-      В збірнику тестів ЗНО ви зможете підготуватись до здачі...
-    </li>
-    </ul>
-	<ul class="compscreen">
+    
+	<ul class="out">
+									
+			</ul>
+			<ul class="form">
+				<li>
+					<img src="images/comp.png">	
+					<h2>Комп'ютер</h2>
+					В комп'ютері починається перший етап квесту, вибір професії.
+				</li>
+				<li>
+					<img src="images/nout.png">
+					<h2>Ноутбук</h2>
+					Ноутбук відповідає за вибір ВНЗ на карті України, залежить від проіесії.
+				</li>
+				<li>
+					<img src="images/board.jpg">
+					<h2>Дошка</h2>
+					Дошка показує вам інформацію про ваші останні дії та вибори.
+				</li>
+				<li>
+					<img src="images/bag.png">
+					<h2>Портфель</h2>
+					Портфель потрібен для того щоб побачити список доступних і пройдених квестів.
+				</li>
+				<li>
+					<img src="images/zno.png">
+					<h2>Збірник ЗНО</h2>
+					В збірнику тестів ЗНО ви зможете підготуватись до здачі, здавши екзамени потрібні для вашого вступу.
+				</li>
+			</ul>
+			<ul class="compscreen">
 				<ul class="next" id="next1">Наступна професія</ul>
 				<ul class="next" id="next2">Наступна професія</ul>
 				<ul class="next" id="next3">Наступна професія</ul>
@@ -213,63 +214,104 @@
 					</ul>
 					</li>
 				</ul>
+			
+
 			</ul>
-    		<div class="noutscreen">
+			<div class="noutscreen">
 				<p id = "title"> Оберіть ВНЗ </p>
 				<div id = "map"> </div>
 				<div hidden id = "dialog">
 					<p> <output id = "name"> </output> </p> 
 					<img id = "image">
 					<p> <output id = "description"> </output> </p>
-					<button onclick = "VNZSelected()"> Обрати цей ВНЗ </button>
-					<button onclick = "backToMap()"> Повенутися до мапи </button>
+					<button onclick = "VNZSelected()" class = "vnzbtn" id = "choiseadd"> Обрати цей ВНЗ </button>
+					<button onclick = "backToMap()" class = "vnzbtn"> Повенутися до мапи </button>
 				</div>
 				<script
 					src = "js/MapInCabinetScript.js"> </script>
 				<script async defer
 					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhB6Pq1U-G2R70VstNVDnESvSCePbjQd0&callback=initMap"> </script>
 			</div>
-	<div class="help">
-    Підказка
-    </div>
-    <div class = "room">
-    <div>
-      <p class = "title"> Кімната </p>
-      <a href="logout.php">
-    <div class="logo">
-    </div>
-	    </a>
-	    <a href="StartPageRaedy.html">
+
+			<div class="znoscreen">
+				<h3>Іспити ЗНО</h3>
+				<p>Тут ви можете здати ЗНО з потрібних вам предметів, які зазначені у вікні вибору ВНЗ, але й пройти усі ці екзамени буде корисно для кожного. Онлайн тестування не містить деяких завдань, максимальна оцінка за укр.мову 180 балів(відсутній твір), з математики - 190 балів(відсутнє відкрите завдвння).</p>
+				<div class="bookshelf">
+				<li id = "book1"><a href="https://zno.osvita.ua/ukrainian/281/">Українська мова та література</a></li>
+				<li id = "book2"><a href="https://zno.osvita.ua/mathematics/290/">Математика</a></li>
+				<li id = "book3"><a href="https://zno.osvita.ua/ukraine-history/282/">Історія України</a></li>
+				<li id = "book4"><a href="https://zno.osvita.ua/english/283/">Англійська мова</a></li>
+				<li id = "book5"><a href="https://zno.osvita.ua/physics/291/">Фізика</a></li>
+			</div>
+			</div>
+
+			<div class="out1">
+
+			</div>
+			<div class="mesform">
+
+			</div>
+
+			<div class="mom">
+				<ul class="talk">
+					
+				</ul>
+			</div>
+
+			<div class="dad">
+				<ul class="talk1">
+
+				</ul>
+			</div>
+
+			<div class="help">
+			Підказка
+		</div>
+		<div class = "room">
+			<div>
+			<p class = "title"> Кімната </p>
+			<a href="" class="support">Підтримка vnzquest@gmail.com</a>
+			<a href="StartPageRaedy.html">
+			<div class="logo">
+		</div>
+	</a>
+		</div>
+			<div class="board" id = "table">
+				<div class="prof">
+					
+				</div>
+				<div class="vnz">
+					
+				</div>
+				<div class="cbal">
+					
+				</div>
+		</div>
+
+			<div class="comp" id = "computer">
+		</div>
+
+			<div class="laptop" id = "laptop">
+		</div>
+
+			<div class="zno" id = "ZNO">
+		</div>
+
+			<div class="bag" id = "briefcase">
+		</div>
+
+		</div>
+		<div class = "back">
+			Назад
+		</div>
+		<a class="link" href = "calculator.html">
+			Розрахунок конкурсного балу
+			</a>
+		<a href="StartPageRaedy.html">
 		<div class="exit">
 
 		</div>
 	</a>
-    </div>
-    <div class="board" id = "table"
-    onmouseover = "tableMouseOver()" onmouseout = "tableMouseOut()" onclick = "tableClick()">
-
-    </div>
-
-    <div class="comp" id = "computer"
-    onmouseover = "computerMouseOver()" onmouseout = "computerMouseOut()"onclick = "computerClick()">
-    </div>
-
-    <div class="laptop" id = "laptop"
-    onmouseover = "laptopMouseOver()" onmouseout = "laptopMouseOut()" onclick = "laptopClick()">
-    </div>
-
-    <div class="zno" id = "ZNO"
-    onmouseover = "ZNOMouseOver()" onmouseout = "ZNOMouseOut()" onclick = "ZNOClick()">
-    </div>
-
-    <div class="bag" id = "briefcase"
-    onmouseover = "briefcaseMouseOver()" onmouseout = "briefcaseMouseOut()" onclick = "briefcaseClick()">
-    </div>
-
-    </div>
-    <a class="link" href = "calculator.html">
-    Розрахунок конкурсного балу
-    </a>
 
 
     <!-- ************************************************************************* -->
