@@ -43,7 +43,6 @@
     <link rel="stylesheet" type="text/css" href="style_c.css">
     <link rel="alternate stylesheet" type="text/css" href="stylecab.css" id="cab_style">
     <script src="js/jquery-3.3.1.slim.js" type="text/javascript"></script>
-    <script type="text/javascript" src="js/script1.js"></script>
     <script type="text/javascript" src = "js/cabinetScript.js"> </script>
     <script type="text/javascript" src="js/script.js"></script>
 </head>
