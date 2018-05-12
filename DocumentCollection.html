@@ -3,12 +3,15 @@
 	<head>
 		<meta charset="utf-8">
 		<title></title>
-		<script src = "js/DocumentCollectionScript.js"> </script>
 	</head>
 	<body>
-		<img src = "" onmouseover = "mouseOverInRequired(event.currentTarget)" onmouseout = "mouseOutInRequired(event.currentTarget)" onclick = "clickInRequired(event.currentTarget)">
-		<img src = "" onmouseover = "mouseOverInRequired(event.currentTarget)" onmouseout = "mouseOutInRequired(event.currentTarget)" onclick = "clickInRequired(event.currentTarget)">
-		<img src = "" onmouseover = "mouseOverInRequired(event.currentTarget)" onmouseout = "mouseOutInRequired(event.currentTarget)" onclick = "clickInRequired(event.currentTarget)">
-		<img src = "" onmouseover = "mouseOutInRequired(event.currentTarget)" onmouseout = "mouseOverInRequired(event.currentTarget)">
+		<div id = "questImages">
+		</div>
+		<div id = "dialog" hidden>
+			<p> <output id  = "nameOut"> </p>
+			<p> <output id  = "descriptionOut"> </p>
+			<button onclick = "document.getElementById('dialog').hidden = true;"> Back </button>
+		</div>
+		<script src = "js/DocumentCollectionScript.js"> </script>
 	</body>
 </html>
