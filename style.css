@@ -19,6 +19,12 @@ body {
 	height: 100%;
 	padding-top: 13vw;
 }
+@media only screen and (max-width: 480px) {
+ 	.block1 {
+ 		background-size: 260%;
+ 		transition: 0.5s;
+ 	}
+ }
 .block2 {
 	background-image: url("images/back3.jpg");
 	background-size: 100%;
@@ -26,6 +32,12 @@ body {
 	height: 100%;
 	padding-top: 13vw;
 }
+@media only screen and (max-width: 480px) {
+ 	.block2 {
+ 		background-size: 260%;
+ 		transition: 0.5s;
+ 	}
+ }
 .block3 {
 	background-image: url("images/back2.jpg");
 	background-size: 100%;
@@ -33,6 +45,12 @@ body {
 	height: 100%;
 	padding-top: 5vw;
 }
+@media only screen and (max-width: 480px) {
+ 	.block3 {
+ 		background-size: 260%;
+ 		transition: 0.5s;
+ 	}
+ }
 .buttons {
 	width: 100%;
 	height: 3.4vw;
@@ -64,6 +82,14 @@ body {
  	.in {
  		height: 6vw;
  		width: 10vw;
+ 		transition: 0.5s;
+ 	}
+ }
+ @media only screen and (max-width: 400px) {
+ 	.in {
+ 		background-size: 94%;
+ 		height: 5.5vw;
+ 		width: 8vw;
  		transition: 0.5s;
  	}
  }
@@ -107,10 +133,11 @@ body {
 }
 @media only screen and (max-width: 480px) {
  	.text {
+ 		text-align: center;
  		margin-left: 15%;
  		margin-top: 60%;
  		width: 70%;
- 		font-size: 3vw;
+ 		font-size: 3.5vw;
  		transition: 0.5s;
  	}
  }
@@ -122,10 +149,12 @@ body {
 	border-bottom: 0.1vw solid white;
 	padding-bottom: 0.2vw;
 	width: 60%;
+	font-weight: bold;
 }
 @media only screen and (max-width: 480px) {
  	.head {
- 		font-size: 4vw;
+ 		margin-left: 5%;
+ 		font-size: 4.5vw;
  		width: 90%;
  		transition: 0.5s;
  	}
@@ -163,7 +192,7 @@ body {
  }
 @media only screen and (max-width: 480px) {
  	.row {
- 		margin-top: 12%;
+ 		margin-top: 10%;
  		height: 6vw;
  		background-size: 55%;
  		transition: 0.5s;
@@ -184,8 +213,8 @@ body {
 @media only screen and (max-width: 480px) {
  	.sbtn {
  		margin-left: 2vw;
- 		margin-top: 45%;
- 		height: 10vw;
+ 		margin-top: 40%;
+ 		height: 20vw;
  		width: 4%;
  		transition: 0.5s;
  	}
@@ -201,25 +230,35 @@ body {
 }
 @media only screen and (max-width: 480px) {
  	.sbtn a{
- 		margin-top: 2vw;
- 		height: 2vw;
- 		width: 2vw;
+ 		border-radius: 2vw;
+ 		margin-top: 3vw;
+ 		height: 3vw;
+ 		width: 3vw;
  		transition: 0.5s;
  	}
  }
 .sbtn li {
 	list-style: none;
 }
-.logo-main {
+.logo-main{
+	position: absolute;
 	display: block;
-	width: 13vw;
-	height: 1.7vw;
+	width: 15%;
+	height: 90%;
 	background-image: url("images/logo.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	float: left;
-	margin-left: -65vw;
+	left: 5%;
 }
+@media only screen and (max-width: 480px) {
+ 	.logo-main {
+ 		margin-top: 5%;
+ 		width: 27%;
+ 		height: 90%;
+ 		transition: 0.5s;
+ 	}
+ }
 .img1 {
 	position: absolute;
 	display: block;
@@ -233,7 +272,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
  	.img1 {
- 		top: 9%;
+ 		top: 11%;
  		margin-left: 40%;
  		height: 50vw;
  		width: 19vw;
@@ -254,6 +293,7 @@ body {
 }
 @media only screen and (max-width: 480px) {
  	.img2 {
+ 		margin-top: 11%;
  		margin-left: 35%;
  		height: 50vw;
  		width: 22vw;
@@ -261,13 +301,11 @@ body {
  	}
  }
 .img1:hover {
-	-webkit-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
 	transition: 0.5s;
 }
 .img2:hover {
-	-webkit-transform: scale(1.1, 1.1);
-	        transform: scale(1.1, 1.1);
+	transform: scale(1.1, 1.1);
 	transition: 0.5s;
 }
 .img1:hover .message {
@@ -315,7 +353,8 @@ body {
  }
 @media only screen and (max-width: 480px) {
  	.message {
- 		margin-left: 0;
+ 		margin-left: 25%;
+ 		font-size: 2.5vw;
  		transition: 0.5s;
  	}
  }
@@ -354,7 +393,8 @@ body {
  }
 @media only screen and (max-width: 480px) {
  	 .message1 {
- 		margin-left: 0;
+ 		margin-left: 30%;
+ 		font-size: 2.5vw;
  		transition: 0.5s;
  	}
  }
@@ -513,7 +553,7 @@ body {
 	width: 65%;
 	height: 0.8vw;
 	margin-left: 17.5%;
-	margin-top: -0.4vw;
+	margin-top: 15%;
 }
 @media only screen and (max-width: 480px) {
  	.orline {
@@ -623,7 +663,7 @@ body {
 @media only screen and (max-width: 720px) {
  	.out {
  		background-size: 60%;
- 		transition: 0.5s;
+ 		transition: 0.6s;
  	}
  }
 @media only screen and (max-width: 480px) {
@@ -634,8 +674,24 @@ body {
  }
 .out:hover {
 	background-image: url("images/regbtnh.png");
-	transition: 0.4s;
+	transition: 0.5s;
 }
 .out:active {
 	background-image: url("images/regbtna.png");
 }
+.socshare {
+	display: block;
+	width: 65%;
+	color: white;
+	font-family: Century Gothic;
+	font-size: 1vw;
+	margin-left: 17.5%;
+	border-bottom: 0.1vw solid white;
+	padding-bottom: 1%;
+}
+@media only screen and (max-width: 480px) {
+ 	.socshare {
+ 		font-size: 2vw;
+ 		transition: 0.5s;
+ 	}
+ }

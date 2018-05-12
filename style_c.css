@@ -133,11 +133,3 @@ button:hover {
 	background-image: url("images/regbtna.png");
 	transition: 0.5s;
 }
-
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button,
-input[type=number] { 
-    -webkit-appearance: none;
-    -moz-appearance: textfield;
-    appearance: none;
-}
