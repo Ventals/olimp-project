@@ -44,7 +44,7 @@ function clickInRequired(event) {
 		time = time - t;
 		if(time >= CLICK_ANIMATION_DURATION) {
 			elem.width = (1 + CLICK_SIZE_CHANGE)*startWidth;
-			setInterval(function() {
+			setTimeout (function() {
 				elem.hidden = true;
 				setElementIsComleted(elem);
 			}, CLICK_PAUSE_BEFORE_HIDDEN);
@@ -87,6 +87,7 @@ function setElementIsComleted(elem) {
 	document.getElementById("nameOut").value = elem.doc.name;
 	document.getElementById("descriptionOut").value = elem.doc.description;
 	document.getElementById("dialog").hidden = false;
+	return;
 }
 
 
