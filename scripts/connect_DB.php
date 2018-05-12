@@ -1,7 +1,12 @@
 <?php
 	## function declare
 	function createUser($link, $token, $given_name, $last_name) {
-		$query = "INSERT INTO `users` (`id`, `token`, `role`, `given_name`, `last_name`) VALUES (NULL, '$token', 'user', '$given_name', '$last_name');";
+		$query = "INSERT INTO `users` (`id`, `token`, `role`, `given_name`, `last_name`, `choise_sphere`) VALUES (NULL, '$token', 'user', '$given_name', '$last_name', 'NULL');";
+		mysqli_query($link, $query);
+	}
+
+	function set_choise_sphere($link, $token, $choise_sphere) {
+		$query = "UPDATE `users` SET `choise_sphere` = '$choise_sphere' WHERE `users`.`token` = '$token';";
 		mysqli_query($link, $query);
 	}
 
