@@ -17,6 +17,7 @@ jQuery('document').ready(function(){
 		jQuery('.compscreen').css("margin-left", "-500%");
 		jQuery('.noutscreen').css("margin-left", "-500%");
 		jQuery('.znoscreen').css("margin-left", "-500%");
+		jQuery('.bagscreen').css("margin-left", "-500%");
 
 		jQuery('.board').css("transform", "scale(1, 1)");
 		jQuery('.board').css("z-index", "40");	
@@ -33,11 +34,16 @@ jQuery('document').ready(function(){
 		jQuery('.form').css("margin-left", "20%");
 		jQuery('.out').css("margin-left", "80%");
 	});
+	jQuery('.bag').on('click', function(){
+		jQuery('.bagscreen').css("margin-left", "20%");
+		jQuery('.out').css("margin-left", "49%");
+		jQuery('.out').css("margin-top", "1%");
+	});
 	jQuery('.board').on('click', function(){
 		jQuery(this).css("transform", "scale(3, 3)");
 		jQuery(this).css("z-index", "70");	
 		jQuery(this).css("margin-top", "20%");
-		jQuery(this).css("font-size", "0.3vw");
+		jQuery(this).css("font-size", "0.6vw");
 		jQuery('.out').css("margin-top", "1%");
 		jQuery('.out').css("margin-left", "95%");
 	});
@@ -79,7 +85,7 @@ jQuery('document').ready(function(){
 		jQuery('.out').css("margin-left", "83%");
 		jQuery('.out').css("margin-top", "1%");
 		jQuery('.mesform').css("margin-left", "25%");
-		jQuery('.mesform').html("<h2>Іспити ЗНО</h2> <br \/> Натисніть на відповідну книжку щоб розпочати тестування, коли ви пройдете усі потрібні екзамени, натисніть на <h4>Розрахунок конкурсного балу</h4>, для того щоб підрахувати ваш бал для вступу в навчальний заклад, ви можете перераховувати його без повертання до попереднього етапу.");
+		jQuery('.mesform').html("<h2>Іспити ЗНО</h2> <br \/> Натисніть на відповідну книжку щоб розпочати тестування, коли ви пройдете усі потрібні екзамени, натисніть на <h4>Розрахунок конкурсного балу</h4>, для того щоб підрахувати ваш бал для вступу в навчальний заклад. Потрібні екзамени для вашої професії вказані на дошці.");
 		jQuery('.out1').css("margin-left", "74%");
 	}  
 	});
@@ -124,6 +130,28 @@ jQuery('document').ready(function(){
 		jQuery(this).css("background-color", "#66CDAA");
 	});
 
+	if(localStorage.getItem('docs') == 4){
+		jQuery('#quest1').html("<s>Квест-1. Збір документів</s> (пройдено)");
+		progres = 4;
+		localStorage.setItem('pers_progres', progres);
+		jQuery('.mom').css("margin-left", "40%");
+		jQuery('.talk').css("margin-left", "50%");
+		jQuery('.mom').css("transition-delay", "1s");
+		jQuery('.talk').html("Ну що ж залишилось тільки зібрати документи... Ого ти вже все зробив? Молодець!");
+		jQuery('.talk').on('click', function(){
+			jQuery(this).css("margin-left", "-500%");
+			jQuery('.dad').css("margin-left", "50%");
+			jQuery('.talk1').css("margin-left", "40%");
+			jQuery('.talk1').css("transition-delay", "2s");
+			jQuery('.talk1').html("Можна іти поступати, ми пишаємось тобою, ти зробив все дуже добре. Удачі тобі!");
+			jQuery('.talk1').css("opacity", "1");
+		});
+		jQuery('.talk1').on('click', function(){
+			jQuery('#tovnz').css("margin-left", "68%");
+			jQuery('#tovnz').css("margin-top", "18%");
+		});
+	}
+
 	var choise;
 	if(choise != ""){
 		choise = localStorage.getItem('prof');
@@ -131,19 +159,19 @@ jQuery('document').ready(function(){
 		choise = "";
 	}
 	jQuery('.prof').html(choise);
-	if(localStorage.getItem('bal') != 0){
+	if(localStorage.getItem('bal') != 0 && localStorage.getItem('docs') == 0){
 		jQuery('.cbal').html("Ваш конкурсний бал: " + localStorage.getItem('bal'));
 		progres = 3;
 		localStorage.setItem('pers_progres', progres);
-		if(progres == 3){
+}
+	if(progres == 3){
 		jQuery('.mesform').css("margin-left", "25%");
 		jQuery('.mesform').html("<h2>Четвертий етап</h2> <br \/> Вітаємо, ви готові до вступу! Ви вибрали ВНЗ та професію, здали ЗНО і розрахували свій конкурсний бал. Залишилось зібрати потрібні документи, для цього натисніть на <h3>Портфель</h3> і виберіть потрібний квест.");
 		jQuery('.out1').css("margin-left", "74%");
 	}
-}
 	var flag1 = "";
 	jQuery('#choose1').on('click', function(){
-		choise = "Ти збираєшся стати юристом";
+		choise = "Ти збираєшся стати юристом" + "\nЗНО для здачі:" + "\nІсторія України, Українська мова, Англійська мова або Математика";
 		localStorage.setItem('prof', choise);
 		var flag1 = "1";
 		jQuery('.prof').html(choise);
@@ -151,12 +179,15 @@ jQuery('document').ready(function(){
 		jQuery('.compscreen').css("margin-left", "-500%");
 		if(flag1 == "1"){
 		jQuery('.mom').css("margin-left", "10%");
+		jQuery('.talk').css("margin-left", "80%");
 		jQuery('.talk').html("Привіт, синку, я бачу ти вже обрав собі професію, молодець, там тато щось хотів тобі сказати <br\/> (натисніть щоб продовжити)");
 		jQuery('.talk').on('click', function(){
 		jQuery(this).css("margin-left", "-500%");
 		jQuery('.mom').css("margin-left", "-500%");
 		jQuery('.mom').css("transition-delay", "1s");
 		jQuery('.dad').css("margin-left", "50%");
+		jQuery('.talk1').css("margin-left", "40%");
+		jQuery('.talk1').css("transition-delay", "2s");
 		jQuery('.talk1').html("Так, я бачу ти вже визначився, добре, але це ще не все, ти маєш вибрати ВНЗ, в якому будеш навчатись, подивись на своєму ноутбуці.");
 		jQuery('.talk1').css("opacity", "1");
 	});
@@ -170,7 +201,7 @@ jQuery('document').ready(function(){
 	} 
 	});
 	jQuery('#choose2').on('click', function(){
-		choise = "Ти збираєшся стати програмістом";
+		choise = "Ти збираєшся стати IT-фахівцем" + "\nЗНО для здачі:" + "\nМатематика, Українська мова, Англійська мова або Фізика";;
 		localStorage.setItem('prof', choise);
 		var flag1 = "1";
 		jQuery('.prof').html(choise);
@@ -178,12 +209,15 @@ jQuery('document').ready(function(){
 		jQuery('.compscreen').css("margin-left", "-500%");
 		if(flag1 == "1"){
 		jQuery('.mom').css("margin-left", "10%");
+		jQuery('.talk').css("margin-left", "80%");
 		jQuery('.talk').html("Привіт, синку, я бачу ти вже обрав собі професію, молодець, там тато щось хотів тобі сказати <br\/> (натисніть щоб продовжити)");
 		jQuery('.talk').on('click', function(){
 		jQuery(this).css("margin-left", "-500%");
 		jQuery('.mom').css("margin-left", "-500%");
 		jQuery('.mom').css("transition-delay", "1s");
 		jQuery('.dad').css("margin-left", "50%");
+		jQuery('.talk1').css("margin-left", "40%");
+		jQuery('.talk1').css("transition-delay", "2s");
 		jQuery('.talk1').html("Так, я бачу ти вже визначився, добре, але це ще не все, ти маєш вибрати ВНЗ, в якому будеш навчатись, подивись на своєму ноутбуці.");
 		jQuery('.talk1').css("opacity", "1");
 	});
@@ -191,13 +225,13 @@ jQuery('document').ready(function(){
 		jQuery(this).css("margin-left", "-500%");
 		jQuery('.dad').css("margin-left", "-500%");
 		jQuery('.mesform').css("margin-left", "25%");
-		jQuery('.mesform').html("<h2>Другий етап</h2> <br \/> Зараз ви маєте зайти до свого ноутбуку і вибрати ВНЗ, в якому будете навчатись, на карті України, ВНЗ відібрані за вашою професією, удачі.");
+		jQuery('.mesform').html("<h2>Другий етап</h2> <br \/> Зараз ви маєте зайти до свого ноутбуку і вибрати ВНЗ, в якому будете навчатись, на карті України, удачі.");
 		jQuery('.out1').css("margin-left", "74%");
 	});
 	} 
 	});
 	jQuery('#choose3').on('click', function(){
-		choise = "Ти збираєшся стати механіком";
+		choise = "Ти збираєшся стати інженером" + "\nЗНО для здачі:" + "\nМатематика, Українська мова, Англійська мова або Фізика";;
 		localStorage.setItem('prof', choise);
 		var flag1 = "1";
 		jQuery('.prof').html(choise);
@@ -205,12 +239,15 @@ jQuery('document').ready(function(){
 		jQuery('.compscreen').css("margin-left", "-500%");
 		if(flag1 == "1"){
 		jQuery('.mom').css("margin-left", "10%");
+		jQuery('.talk').css("margin-left", "80%");
 		jQuery('.talk').html("Привіт, синку, я бачу ти вже обрав собі професію, молодець, там тато щось хотів тобі сказати <br\/> (натисніть щоб продовжити)");
 		jQuery('.talk').on('click', function(){
 		jQuery(this).css("margin-left", "-500%");
 		jQuery('.mom').css("margin-left", "-500%");
 		jQuery('.mom').css("transition-delay", "1s");
 		jQuery('.dad').css("margin-left", "50%");
+		jQuery('.talk1').css("margin-left", "40%");
+		jQuery('.talk1').css("transition-delay", "2s");
 		jQuery('.talk1').html("Так, я бачу ти вже визначився, добре, але це ще не все, ти маєш вибрати ВНЗ, в якому будеш навчатись, подивись на своєму ноутбуці.");
 		jQuery('.talk1').css("opacity", "1");
 	});
@@ -244,6 +281,7 @@ jQuery('document').ready(function(){
 		if(flag2 == "1"){
 		jQuery('.mom').css("margin-left", "40%");
 		jQuery('.talk').css("margin-left", "50%");
+		jQuery('.mom').css("transition-delay", "3s");
 		jQuery('.talk').html("Прийшов час здавати ЗНО, повірити не можу, 11 років промайнули мов одна мить, удачі!");
 		jQuery('.talk').on('click', function(){
 			jQuery(this).css("margin-left", "-500%");
@@ -256,13 +294,29 @@ jQuery('document').ready(function(){
 		});
 	}
 	});
-		jQuery('.back').on('click', function(){
+		jQuery('#back').on('click', function(){
+		if(progres == 4){
+			documents = 0;
+			localStorage.setItem('docs', documents);
+		}
+		if(progres == 3){
+			var res1 = 0;
+			localStorage.setItem('bal', res1);
+			jQuery('.cbal').html("");
+		}
+		if(progres == 2){
+			vnz = "";
+			localStorage.setItem('nz', vnz);
+			jQuery('.vnz').html(vnz);
+		}
+		if(progres == 1){
+			choise = "";
+			localStorage.setItem('prof', choise);
+			jQuery('.prof').html(choise);
+		}
 		if(localStorage.getItem('pers-progres') >= 0){
 		progres = progres - 1;
 		localStorage.setItem('pers_progres', progres);
-		vnz = "";
-		localStorage.setItem('nz', vnz);
-		jQuery('.vnz').html(vnz);
 	}
 	});
 });
