@@ -510,16 +510,10 @@ body {
 	cursor: pointer;
 	transition: 0.4s;
 }
-.in1:active {
-	background-image: url("images/inp.png");
-}
 .reg1:hover {
 	background-image: url("images/regh.png");
 	cursor: pointer;
 	transition: 0.4s;
-}
-.reg1:active {
-	background-image: url("images/regp.png");
 }
 .go1 {
 	display: block;
@@ -694,4 +688,4 @@ body {
  		font-size: 2vw;
  		transition: 0.5s;
  	}
- \}
+ }

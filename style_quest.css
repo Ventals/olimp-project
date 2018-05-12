@@ -1,0 +1,238 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #44CBC6;
+}
+.table {
+	display: block;
+	margin-top: 6%;
+	margin-left: 17%;
+	margin-right: 3%;
+	background-image: url("images/table.png");
+	width: 80%;
+	height: 43vw;
+	border-radius: 1vw;
+	border: 0.3vw solid #A0522D;
+}
+.docback {
+	position: absolute;
+	display: block;
+	width: 10%;
+	height: 27%;
+	border-radius: 1vw;
+}
+#docb1 {
+	margin-left: 5%;
+	margin-top: 10%;
+}
+#docb2 {
+	margin-left: 18%;
+	margin-top: 3%;
+}
+#docb3 {
+	margin-left: 35%;
+	margin-top: 10%;
+}
+#docb4 {
+	margin-left: 50%;
+	margin-top: 24%;
+}
+#docb5 {
+	margin-left: 2%;
+	margin-top: 25%;
+}
+#docb6 {
+	margin-left: 65%;
+	margin-top: 5%;
+}
+#docb7 {
+	margin-left: 30%;
+	margin-top: 20%;
+}
+#docb8 {
+	margin-left: 60%;
+	margin-top: 10%;
+}
+.document {
+	width: 100%;
+	height: 100%;
+	background-image: url("images/docunrec.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border-radius: 1vw;
+}
+.docback {
+	z-index: 10;
+}
+#docb1:hover,
+#docb2:hover,
+#docb3:hover,
+#docb4:hover,
+#docb5:hover,
+#docb6:hover,
+#docb7:hover,
+#docb8:hover {
+	z-index: 30;
+}
+.docback:hover #doc1 {
+	width: 130%;
+	height: 130%;
+	background-image: url("images/doc1.png");
+	transform: scaleX(-1);
+	transition-property: transform, width, background-image;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s, 0s, 0.5s; 
+}
+.docback:hover #doc2 {
+	width: 130%;
+	height: 130%;
+	background-image: url("images/doc2.png");
+	transform: scaleX(-1);
+	transition-property: transform, width, background-image;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s, 0s, 0.5s; 
+}
+.docback:hover #doc3 {
+	width: 130%;
+	height: 130%;
+	background-image: url("images/doc3.png");
+	transform: scaleX(-1);
+	transition-property: transform, width, background-image;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s, 0s, 0.5s; 
+}
+.docback:hover #doc4 {
+	width: 130%;
+	height: 130%;
+	background-image: url("images/doc4.png");
+	transform: scaleX(-1);
+	transition-property: transform, width, background-image;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s, 0s, 0.5s; 
+}
+.docback:hover #doc5 {
+	width: 130%;
+	height: 130%;
+	transform: scaleX(-1);
+	transition-property: transform, width, background-image;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s, 0s, 0.5s; 
+}
+.docback:hover #doc6 {
+	width: 130%;
+	height: 130%;
+	transform: scaleX(-1);
+	transition-property: transform, width, background-image;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s, 0s, 0.5s; 
+}
+.docback:hover #doc7 {
+	width: 130%;
+	height: 130%;
+	transform: scaleX(-1);
+	transition-property: transform, width, background-image;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s, 0s, 0.5s; 
+}
+.docback:hover #doc8 {
+	width: 130%;
+	height: 130%;
+	transform: scaleX(-1);
+	transition-property: transform, width, background-image;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease-out;
+    transition-delay: 0s, 0s, 0.5s; 
+}
+.mesform {
+	z-index: 60;
+	text-align: left;
+	display: block;
+	width: 50%;
+	height: 20vw;
+	background-color: white;
+	border-radius: 1vw;
+	position: absolute;
+	margin-left: -500%;
+	transition: 0.5s;
+	margin-top: 10%;
+	font-family: Comic Sans Ms;
+	font-size: 1.5vw;
+	color: black;
+	padding: 1%;
+}
+.out1 {
+	z-index: 60;
+	display: block;
+	height: 6%;
+	width: 3%;
+	background-image: url("images/regbtnp.png");
+	background-repeat: no-repeat;
+	background-size: 99%;
+	position: absolute;
+	margin-top: 7.5%;
+	margin-left: -500%;
+	transition: 0.5s;
+}
+.title {
+	position: absolute;
+	color: white;
+	font-family: Comic Sans Ms;
+	font-size: 3vw;
+	top: 1%;
+	margin-left: 17%;
+}
+.finish {
+	display: block;
+	position: absolute;
+	padding-top: 0.3vw;
+	padding-bottom: 0.3vw;
+	padding-left: 1.5vw;
+	padding-right: 1.5vw;
+	background-color: #B61111;
+	border-radius: 0.8vw;
+	text-align: center;
+	color: white;
+	font-family: Verdana;
+	font-size: 2vw;
+	margin-left: -500%;
+	top: 2%;
+	text-decoration: none;
+	transition: 0.5s;
+}
+.finish:hover {
+	cursor: pointer;
+	background-color: #A31010;
+	transition: 0.5s;
+}
+.finish:active {
+	background-color: #730A0A;
+}
+.list {
+	display: block;
+	background-color: white;
+	width: 14%;
+	margin-left: 2%;
+	margin-top: 5%;
+	height: 30vw;
+	position: absolute;
+	border-radius: 0.5vw;
+	color: black;
+	font-size: 1.3vw;
+	font-family: Comic Sans Ms;
+	padding: 1%;
+}
+.list li {
+	list-style: none;
+	float: bottom;
+}
+
