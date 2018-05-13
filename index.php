@@ -229,7 +229,7 @@
 					<p> <output id = "description"> </output> </p>
 					<button onclick = "VNZSelected()" class = "vnzbtn" id = "choiseadd"> Обрати цей ВНЗ </button>
 					<button onclick = "backToMap()" class = "vnzbtn"> Повенутися до мапи </button>
-					<a><button class="vnzbtn">На сайт ВНЗ</button></a>
+					<a id="VNZCiteButton"><button class="vnzbtn">На сайт ВНЗ</button></a>
 				</div>
 				<script
 					src = "js/MapInCabinetScript.js"> </script>
