@@ -133,3 +133,24 @@ button:hover {
 	background-image: url("images/regbtna.png");
 	transition: 0.5s;
 }
+.exit2 {
+	display: block;
+	position: absolute;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	background-color: #B61111;
+	border-radius: 0.8vw;
+	text-align: center;
+	color: white;
+	font-family: Century Gothic;
+	font-size: 2.3vw;
+	top: 0;
+	margin-left: 4%;
+}
+.exit2:hover {
+	background-color: #A31010;
+	transition: 0.4s;
+}
+.exit2:active {
+	background-color: #730A0A;
+}
