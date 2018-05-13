@@ -1,0 +1,186 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #AED0EC;
+}
+.mesform1 {
+	z-index: 60;
+	text-align: left;
+	display: block;
+	width: 50%;
+	height: 20vw;
+	background-color: white;
+	border-radius: 1vw;
+	position: absolute;
+	margin-left: -500%;
+	transition: 0.5s;
+	margin-top: 10%;
+	font-family: Comic Sans Ms;
+	font-size: 1.5vw;
+	color: black;
+	padding: 1%;
+}
+.out2 {
+	z-index: 60;
+	display: block;
+	height: 6%;
+	width: 3%;
+	background-image: url("images/regbtnp.png");
+	background-repeat: no-repeat;
+	background-size: 99%;
+	position: absolute;
+	margin-top: 7.5%;
+	margin-left: -500%;
+	transition: 0.5s;
+}
+.out2:hover {
+	background-image: url("images/regbtnh.png");
+	transition: 0.4s;
+}
+.out2:active {
+	background-image: url("images/regbtna.png");
+}
+.blackboard {
+	position: absolute;
+	z-index: 40;
+	background-image: url("images/blackboard.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	display: block;
+	width: 35%;
+	height: 41%;
+	margin-left: 32%;
+	margin-top: 10%;
+	padding: 3%;
+	transition: 1s;
+}
+.logo {
+	display: block;
+	width: 14%;
+	height: 3vw;
+	background-image: url("images/logo.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	float: left;
+	margin-left: 18%;
+	margin-top: 2%;
+}
+.support {
+	position: absolute;
+	text-decoration: none;
+	display: block;
+	color: white;
+	font-family: Comic Sans Ms;
+	font-size: 1vw;
+	margin-left: 41%;
+	margin-top: 2%;
+}
+.support:hover {
+	color: crimson;
+	transition: 0.3s;
+}
+.title {
+	display: block;
+	float: right;
+	color: white;
+	font-family: Comic Sans Ms;
+	font-size: 2.5vw;
+	margin-right: 18%;
+	margin-top: 1%;
+}
+.profesor {
+	display: block;
+	position: absolute;
+	width: 13%;
+	height: 27vw;
+	background-image: url("images/profesor.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	margin-left: -500%;
+	margin-top: 17%;
+	z-index: 70;
+	transition: 2s;
+	transition-delay: 4s;
+}
+.talk2 {
+	position: absolute;
+	display: block;
+	width: 200%;
+	background-color: white;
+	border-radius: 1vw;
+	margin-left: 80%;
+	border: 0.1vw solid gray;
+	color: black;
+	font-size: 1.1vw;
+	font-family: Comic Sans Ms;
+	padding: 3%;
+	transition: 0.5s;
+	opacity: 0;
+	transition-delay: 2s;
+}
+.spec {
+	width: 90%;
+	text-align: left;
+	display: block;
+	color: white;
+	font-family: Comic Sans Ms;
+	font-size: 1.5vw;
+	float: bottom;
+	margin-top: 1%;
+}
+.spec:hover {
+	cursor: pointer;
+	color: yellow;
+	transition: 0.5s;
+}
+.choosespec {
+	display: block;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	background-color: #B61111;
+	border-radius: 0.8vw;
+	text-align: center;
+	color: white;
+	font-family: Century Gothic;
+	font-size: 2vw;
+	margin-left: 1%;
+	margin-top: 4%;
+	opacity: 0;
+	transition: 1s;
+	width: 40%;
+}
+.choosespec:hover {
+	cursor: pointer;
+	background-color: #A31010;
+	transition: 0.5s;
+}
+.choosespec:active {
+	background-color: #730A0A;
+}
+.end {
+	display: block;
+	position: absolute;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	background-color: #B61111;
+	border-radius: 0.8vw;
+	text-align: center;
+	color: white;
+	font-family: Century Gothic;
+	font-size: 2vw;
+	margin-left: -500%;
+	margin-top: 22%;
+	width: 12%;
+	z-index: 70;
+}
+.end:hover {
+	cursor: pointer;
+	background-color: #A31010;
+	transition: 0.5s;
+}
+.end:active {
+	background-color: #730A0A;
+}
