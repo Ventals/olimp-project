@@ -141,8 +141,8 @@
   							data-hashtags=""
   							data-via=""
   							data-related="twitterapi,twitter">
-							<li class="tw">
-</a>
+							<li class="tw"></li>
+						</a>
 						<a href="https://myaccount.google.com/?hl=ru"><li class="goo"></li></a>
 					</div>
 				</form>
