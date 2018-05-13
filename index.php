@@ -143,8 +143,10 @@
   								<li class="tw">
   								</li>
 						</a>
-					<li class="goo"><div class="g-plus" data-action="share" data-href="https://olimp-project.herokuapp.com/"> </div> </li>		
+					<li class="goo"><div class="g-plus" data-action="share" data-href="https://olimp-project.herokuapp.com/"> </div> </li>	
+
 					</div>
+					<style> .g-plus { opacity: 0; } </style>
 				</form>
       </div>
     </div>
