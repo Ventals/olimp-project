@@ -49,7 +49,7 @@
     <script src="js/jquery-3.3.1.slim.js" type="text/javascript"></script>
     <script type="text/javascript" src = "js/cabinetScript.js"> </script>
     <script type="text/javascript" src="js/script.js"></script>
-
+	<title>Головна</title>
 </head>
 <body>
     
@@ -320,7 +320,7 @@
 			Розрахунок конкурсного балу
 			</a>
 		<a href="logout.php">
-		<div class="exit">
+		<div class="exit1">
 			Вихід
 		</div>
 	</a>
