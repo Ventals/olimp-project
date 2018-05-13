@@ -253,11 +253,11 @@
 				<h3>Іспити ЗНО</h3>
 				<p>Тут ви можете здати ЗНО з потрібних вам предметів, які зазначені у вікні вибору ВНЗ, але й пройти усі ці екзамени буде корисно для кожного. Онлайн тестування не містить деяких завдань, максимальна оцінка за укр.мову 180 балів(відсутній твір), з математики - 190 балів(відсутнє відкрите завдвння).</p>
 				<div class="bookshelf">
-				<li id = "book1"><a href="https://zno.osvita.ua/ukrainian/281/">Українська мова та література</a></li>
-				<li id = "book2"><a href="https://zno.osvita.ua/mathematics/290/">Математика</a></li>
-				<li id = "book3"><a href="https://zno.osvita.ua/ukraine-history/282/">Історія України</a></li>
-				<li id = "book4"><a href="https://zno.osvita.ua/english/283/">Англійська мова</a></li>
-				<li id = "book5"><a href="https://zno.osvita.ua/physics/291/">Фізика</a></li>
+				<li id = "book1"><a href="https://zno.osvita.ua/ukrainian/281/" target="_blank">Українська мова та література</a></li>
+				<li id = "book2"><a href="https://zno.osvita.ua/mathematics/290/" target="_blank">Математика</a></li>
+				<li id = "book3"><a href="https://zno.osvita.ua/ukraine-history/282/" target="_blank">Історія України</a></li>
+				<li id = "book4"><a href="https://zno.osvita.ua/english/283/" target="_blank">Англійська мова</a></li>
+				<li id = "book5"><a href="https://zno.osvita.ua/physics/291/" target="_blank">Фізика</a></li>
 			</div>
 			</div>
 
@@ -271,7 +271,7 @@
 			<div class="mesform">
 
 			</div>
-			<a href = "Cabinet.html">
+			<a href = "./">
 			<div class="renew">
 				Почати заново
 			</div>
