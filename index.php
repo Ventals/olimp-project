@@ -269,12 +269,12 @@
 			<div class="mesform">
 
 			</div>
-			<a href = "./">
+			<a href = "Cabinet.html">
 			<div class="renew">
 				Почати заново
 			</div>
 			</a>
-	
+
 			<div class="mom">
 				<ul class="talk">
 					
@@ -298,7 +298,7 @@
 			<div>
 			<p class = "title"> Кімната </p>
 			<a href="" class="support">Підтримка vnzquest@gmail.com</a>
-			<a href="StartPageRaedy.html">
+			<a href="logout.php">
 			<div class="logo">
 		</div>
 	</a>
