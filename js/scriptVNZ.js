@@ -20,7 +20,7 @@ jQuery('document').ready(function(){
 	localStorage.setItem('fac', curfac);
 	if(localStorage.getItem('pers_progres') == 4){
 		jQuery('.mesform1').css("margin-left", "25%");
-		jQuery('.mesform1').html("<h2>Вітаємо, ви вступили до університету!</h2> <br \/> Прийшов час ознайомитись із напрямом вашої діяльності і вибрати спеціальність.");
+		jQuery('.mesform1').html("<h2>Вітаємо, ви вступили до університету!</h2> <br \/> Прийшов час ознайомитись з напрямом вашої діяльності й обрати спеціальність.");
 		jQuery('.out2').css("margin-left", "74%");
 		progres = 5;
 		localStorage.setItem('pers_progres', progres);
@@ -38,7 +38,7 @@ jQuery('document').ready(function(){
 		jQuery('.talk2').html("Вітаю тебе, студент! Це " + localStorage.getItem('nz') + " і ти знаходишся на" + curfac + ", я познайомлю тебе зі спеціальностями, на які ти можеш поступити.");
 		jQuery('.talk2').on('click', function(){
 			if(flagvnz == 1){
-			jQuery('.talk2').html("На дошці ти можеш побачити різні спеціальності нашого факультету, натискай і я розповім тобі про них. В цей час на дошці з'являтиметься кнопка Обрати, обирай спеціальність, якщо вона сподобалась тобі.");
+			jQuery('.talk2').html("На дошці ти можеш побачити різні спеціальності нашого факультету, натискай і я розповім тобі про них. У цей час на дошці з'являтиметься кнопка Обрати, обирай спеціальність, якщо вона сподобалась тобі.");
 			jQuery('.profesor').css("margin-left", "15%");
 			jQuery('.profesor').css("margin-top", "12%");
 			jQuery('.blackboard').css("margin-left", "55%");
@@ -84,7 +84,7 @@ jQuery('document').ready(function(){
 			jQuery('.blackboard').css("margin-left", "32%");
 			jQuery('.profesor').css("margin-left", "40%");
 			jQuery('.profesor').css("margin-top", "17%");
-			jQuery('.talk2').html("Дуже хороший вибір, на цьму ми закінчимо. Приходь завтра і ми розпочнемо твоє навчання.");
+			jQuery('.talk2').html("Дуже добре, на цьму ми закінчимо. Приходь завтра і ми розпочнемо твоє навчання.");
 		} else if(jQuery('.talk2').html() == desc2){
 			spec = jQuery('#spec2').html();
 			flagvnz = 2;
@@ -93,7 +93,7 @@ jQuery('document').ready(function(){
 			jQuery('.blackboard').css("margin-left", "32%");
 			jQuery('.profesor').css("margin-left", "40%");
 			jQuery('.profesor').css("margin-top", "17%");
-			jQuery('.talk2').html("Дуже хороший вибір, на цьму ми закінчимо. Приходь завтра і ми розпочнемо твоє навчання.");
+			jQuery('.talk2').html("Дуже добре, на цьму ми закінчимо. Приходь завтра і ми розпочнемо твоє навчання.");
 		} else if(jQuery('.talk2').html() == desc3){
 			spec = jQuery('#spec3').html();
 			flagvnz = 2;
@@ -102,7 +102,7 @@ jQuery('document').ready(function(){
 			jQuery('.blackboard').css("margin-left", "32%");
 			jQuery('.profesor').css("margin-left", "40%");
 			jQuery('.profesor').css("margin-top", "17%");
-			jQuery('.talk2').html("Дуже хороший вибір, на цьму ми закінчимо. Приходь завтра і ми розпочнемо твоє навчання.");
+			jQuery('.talk2').html("Дуже добре, на цьму ми закінчимо. Приходь завтра і ми розпочнемо твоє навчання.");
 		} 
 		localStorage.setItem('spec', spec);
 	});
