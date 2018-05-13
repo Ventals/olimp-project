@@ -5,7 +5,7 @@
 
   require __DIR__ . '/dotenv-loader.php';
 
-  include_once __DIR__ . "/scripts/connect_DB.php";
+  #include __DIR__ . "/scripts/connect_DB.php";
 
   use Auth0\SDK\Auth0;
 
@@ -33,7 +33,15 @@
   ]);
 
   $userInfo = $auth0->getUser();
-
+  #if ($userInfo) {
+  #	$token = $userInfo["sub"];
+  #	$checkUser = "SELECT `token` FROM `users` WHERE `token`=  '$token'";
+  #	$result = mysqli_fetch_array(mysqli_query($DB_CONNECTION, $checkUser));
+  #	if (!$result || !in_array($token, $result)) {
+  #		createUser($DB_CONNECTION, $token, $userInfo["nickname"], "");
+  #	}
+  #}
+  
 
 ?>
 <html>

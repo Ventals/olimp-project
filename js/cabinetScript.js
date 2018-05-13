@@ -7,7 +7,7 @@ jQuery('document').ready(function(){
 	}
 	if(progres == 0){
 	jQuery('.mesform').css("margin-left", "25%");
-	jQuery('.mesform').html("<h2>Ласкаво просимо до нашого квесту!</h2> <br \/> Перш за все рекомендуємо вам ознайомитись із <h3>підказкою</h3>,вона розкаже вам про призначення всіх елементів кабінету. Коли будете готові, натисніть на <h3>комп'ютер</h3>, він розпочинає перший етап квесту.");
+	jQuery('.mesform').html("<h2>Ласкаво просимо до нашого квесту!</h2> <br \/> Перш за все рекомендуємо вам ознайомитись із <h3><i>підказкою</i></h3> Вона розкаже вам про призначення всіх елементів кабінету. Коли будете готові, натисніть на <h3><i>комп'ютер</i></h3>, він розпочинає перший етап квесту.");
 	jQuery('.out1').css("margin-left", "74%");
 	}
 
@@ -156,13 +156,13 @@ jQuery('document').ready(function(){
 		jQuery('.mom').css("margin-left", "40%");
 		jQuery('.talk').css("margin-left", "50%");
 		jQuery('.mom').css("transition-delay", "1s");
-		jQuery('.talk').html("Ну що ж залишилось тільки зібрати документи... Ого ти вже все зробив? Молодець!");
+		jQuery('.talk').html("Ну що ж, залишилось тільки зібрати документи... Ого ти вже все зробив? Молодець!");
 		jQuery('.talk').on('click', function(){
 			jQuery(this).css("margin-left", "-500%");
 			jQuery('.dad').css("margin-left", "50%");
 			jQuery('.talk1').css("margin-left", "40%");
 			jQuery('.talk1').css("transition-delay", "2s");
-			jQuery('.talk1').html("Можна іти поступати, ми пишаємось тобою, ти зробив все дуже добре. Удачі тобі!");
+			jQuery('.talk1').html("Можна йти поступати, ми пишаємось тобою, ти зробив все дуже добре. Удачі тобі!");
 			jQuery('.talk1').css("opacity", "1");
 		});
 		jQuery('.talk1').on('click', function(){
