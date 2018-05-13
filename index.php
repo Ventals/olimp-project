@@ -137,9 +137,10 @@
   							data-size="large"
   							data-text="Освітній портал для вступників"
   							data-url="https://olimp-project.herokuapp.com/"
-  							data-lang="uk"
+  							data-hashtags=""
+  							data-via=""
   							data-related="twitterapi,twitter">
-Tweet
+							Tweet
 </a>
 						<a href="https://myaccount.google.com/?hl=ru"><li class="goo"></li></a>
 					</div>
