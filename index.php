@@ -49,6 +49,10 @@
     <script src="js/jquery-3.3.1.slim.js" type="text/javascript"></script>
     <script type="text/javascript" src = "js/cabinetScript.js"> </script>
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer>
+     {lang: 'uk'}
+    </script>
+
 	<title>Головна</title>
 </head>
 <body>
@@ -139,7 +143,7 @@
   								<li class="tw">
   								</li>
 						</a>
-						<a href="https://myaccount.google.com/?hl=ru"><li class="goo"></li></a>
+					<div class="g-plus" data-action="share" data-href="https://olimp-project.herokuapp.com/"><li class="goo"></li></div>		
 					</div>
 				</form>
       </div>
