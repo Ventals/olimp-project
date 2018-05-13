@@ -133,7 +133,7 @@
 					<div class="soc">
 						<a href="https://www.facebook.com/"><li class="fb"></li></a>
 						<a href="https://twitter.com/share?
-  							url=https%3A%2F%2Folimp-project.herokuapp.com%2Fweb%2Ftweet-button
+  							url=https%3A%2F%2Folimp-project.herokuapp.com
   							    &related=twitterapi%2Ctwitter
   								&text=Портал%20для%20школярів">							
   								<li class="tw">
