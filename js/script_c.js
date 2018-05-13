@@ -53,7 +53,11 @@ jQuery('document').ready(function(){
 		bal5 = parseInt(bal5);
 		bal1 = bal1 * 0.5;
 		bal2 = bal2 * 0.2;
-		bal3 = bal3 * 0.2;
+		if(jQuery('#bal5').val() == 0){
+			bal3 = bal3 * 0.25;
+		} else {
+			bal3 = bal3 * 0.2;
+		}
 		bal4 = bal4 * 0.05;
 		bal5 = bal5 * 0.05;
 		res = bal1 + bal2 + bal3 + bal4 + bal5;
