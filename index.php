@@ -132,14 +132,12 @@
 					</div>
 					<div class="soc">
 						<a href="https://www.facebook.com/"><li class="fb"></li></a>
-						<a class="twitter-share-button"
+						<a class="https://olimp-project.herokuapp.com/"
   							href="https://twitter.com/share"
   							data-size="large"
   							data-text="Освітній портал для вступників"
-  							data-url="https://olimp-project.herokuapp.com/"
-  							data-lang="uk"
   							data-related="twitterapi,twitter">
-Tweet
+							<li class="tw">
 </a>
 						<a href="https://myaccount.google.com/?hl=ru"><li class="goo"></li></a>
 					</div>
