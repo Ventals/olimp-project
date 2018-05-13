@@ -35,7 +35,7 @@ jQuery('document').ready(function(){
 		jQuery('.out').css("margin-left", "80%");
 	});
 	jQuery('.bag').on('click', function(){
-		if(progres == 3){
+		if(progres >= 3){
 		jQuery('.bagscreen').css("margin-left", "20%");
 		jQuery('.out').css("margin-left", "49%");
 		jQuery('.out').css("margin-top", "1%");
@@ -64,7 +64,7 @@ jQuery('document').ready(function(){
 		jQuery('.out').css("margin-top", "1%");
 	}  else {
 		jQuery('.mesform').css("margin-left", "25%");
-		jQuery('.mesform').html("<h2>Почати заново?</h2> <br \/> Ві вже пройшли цей етап, якщо хочете повернутись, натисніть кнопку <h3>Назад</h3> і ваш прогрес обнулиться, кожний клік по кнопці повертає на один етап.");
+		jQuery('.mesform').html("<h2>Почати заново?</h2> <br \/> Ви вже пройшли цей етап, якщо хочете повернутись, натисніть кнопку <h3>Назад</h3> і ваш прогрес обнулиться, кожний клік по кнопці повертає на один етап.");
 		jQuery('.out1').css("margin-left", "74%");
 		if(progres < 1){
 			jQuery('.mesform').css("margin-left", "25%");
@@ -86,7 +86,7 @@ jQuery('document').ready(function(){
 		jQuery('.out1').css("margin-left", "74%");
 	} else {
 		jQuery('.mesform').css("margin-left", "25%");
-		jQuery('.mesform').html("<h2>Почати заново?</h2> <br \/> Ві вже пройшли цей етап, якщо хочете повернутись, натисніть кнопку <h3>Назад</h3> і ваш прогрес обнулиться, кожний клік по кнопці повертає на один етап.");
+		jQuery('.mesform').html("<h2>Почати заново?</h2> <br \/> Ви вже пройшли цей етап, якщо хочете повернутись, натисніть кнопку <h3>Назад</h3> і ваш прогрес обнулиться, кожний клік по кнопці повертає на один етап.");
 		jQuery('.out1').css("margin-left", "74%");
 	}
 	});
@@ -149,7 +149,7 @@ jQuery('document').ready(function(){
 		jQuery(this).css("background-color", "#66CDAA");
 	});
 
-	if(localStorage.getItem('docs') == 4){
+	if(localStorage.getItem('docs') == 4 && progres == 3){
 		jQuery('#quest1').html("<s>Квест-1. Збір документів</s> (пройдено)");
 		progres = 4;
 		localStorage.setItem('pers_progres', progres);
@@ -162,7 +162,7 @@ jQuery('document').ready(function(){
 			jQuery('.dad').css("margin-left", "50%");
 			jQuery('.talk1').css("margin-left", "40%");
 			jQuery('.talk1').css("transition-delay", "2s");
-			jQuery('.talk1').html("Можна іти поступати, ми пишаємось тобою, ти зробив все дуже добре. Удачі тобі!");
+			jQuery('.talk1').html("Можна йти поступати, ми пишаємось тобою, ти зробив все дуже добре. Удачі тобі!");
 			jQuery('.talk1').css("opacity", "1");
 		});
 		jQuery('.talk1').on('click', function(){
@@ -244,7 +244,7 @@ jQuery('document').ready(function(){
 		jQuery(this).css("margin-left", "-500%");
 		jQuery('.dad').css("margin-left", "-500%");
 		jQuery('.mesform').css("margin-left", "25%");
-		jQuery('.mesform').html("<h2>Другий етап</h2> <br \/> Зараз ви маєте зайти до свого ноутбуку і вибрати ВНЗ, в якому будете навчатись, на карті України, удачі.");
+		jQuery('.mesform').html("<h2>Другий етап</h2> <br \/> Зараз ви маєте зайти до свого ноутбуку і вибрати ВНЗ, в якому будете навчатись, на карті України, скористайтесь сайтами ВНЗ щоб упевнитись в наявності потрібного вам факультету, удачі.");
 		jQuery('.out1').css("margin-left", "74%");
 	});
 	} 
@@ -274,7 +274,7 @@ jQuery('document').ready(function(){
 		jQuery(this).css("margin-left", "-500%");
 		jQuery('.dad').css("margin-left", "-500%");
 		jQuery('.mesform').css("margin-left", "25%");
-		jQuery('.mesform').html("<h2>Другий етап</h2> <br \/> Зараз ви маєте зайти до свого ноутбуку і вибрати ВНЗ, в якому будете навчатись, на карті України, ВНЗ відібрані за вашою професією, удачі.");
+		jQuery('.mesform').html("<h2>Другий етап</h2> <br \/> Зараз ви маєте зайти до свого ноутбуку і вибрати ВНЗ, в якому будете навчатись, на карті України, скористайтеся сайтами ВНЗ щоб упевнитись в наявності потрібного вам факультету, удачі.");
 		jQuery('.out1').css("margin-left", "74%");
 	});
 	} 
@@ -283,10 +283,11 @@ jQuery('document').ready(function(){
 	var vnz;
 	if(localStorage.getItem('nz') != ""){
 		vnz = localStorage.getItem('nz');
+		jQuery('.vnz').html("Ви обрали " + vnz);
 	} else {
 		vnz = "";
+		jQuery('.vnz').html("");
 	}
-		jQuery('.vnz').html(vnz);
 	jQuery('#choiseadd').on('click', function(){
 		flag2 = "1";
 		jQuery('.noutscreen').css("margin-left", "-500%");
@@ -294,9 +295,9 @@ jQuery('document').ready(function(){
 		jQuery('.mesform').css("margin-left", "25%");
 		jQuery('.mesform').html("<h2>Третій етап</h2> <br \/> Ви обрали заклад, в якому будете навчатись, час переходити до наступного етапу, здачі екзаменів.");
 		jQuery('.out1').css("margin-left", "74%");
-		vnz = "Ви обрали " + jQuery('#name').html();
+		vnz = jQuery('#name').html();
 		localStorage.setItem('nz', vnz);
-		jQuery('.vnz').html(vnz);
+		jQuery('.vnz').html("Ви обрали " + vnz);
 		if(flag2 == "1"){
 		jQuery('.mom').css("margin-left", "40%");
 		jQuery('.talk').css("margin-left", "50%");
@@ -313,14 +314,49 @@ jQuery('document').ready(function(){
 		});
 	}
 	});
+	if(progres == 5){
+		jQuery('.mom').css("margin-left", "40%");
+		jQuery('.talk').css("margin-left", "50%");
+		jQuery('.mom').css("transition-delay", "1s");
+		jQuery('.talk').html("О, ти вже тут, повірити не можу, тобі все вдалося, ти вже такий самостійний!");
+		jQuery('.talk').on('click', function(){
+			jQuery(this).css("margin-left", "-500%");
+			jQuery('.dad').css("margin-left", "50%");
+			jQuery('.talk1').css("margin-left", "40%");
+			jQuery('.talk1').css("transition-delay", "2s");
+			jQuery('.talk1').html("Так, він у нас тепер спеціаліст в галузі\n" + localStorage.getItem('spec') + " Ми пишаємось тобою, я впевнений у тебе все вийде і ти досягнеш великих успіхів!");
+			jQuery('.talk1').css("opacity", "1");
+		});
+		jQuery('.talk1').on('click', function(){
+			jQuery('.mesform').css("margin-left", "25%");
+			jQuery('.mesform').html("<h2>Кінець!</h2> <br \/> <b>Ви поступили до:</b> " + vnz + "<br \/> <b>Ваша спеціальність:</b> " + localStorage.getItem('spec') + "<br \/> <b>Ваш конкурсний бал:</b> " + localStorage.getItem('bal') + "<br \/> <br \/> Ви зробили все як треба і у вас є великі шанси поступити туди, куди ви хочете.");
+			jQuery('.mesform').css("height", "30vw");
+			jQuery('.mesform').css("z-index", "80");
+			jQuery('.renew').css("margin-left", "50%");
+		});
+	}
+	    jQuery('.renew').on('click', function(){
+	    	if(progres == 5){
+	    	progres = 0;
+	    	localStorage.setItem('pers_progres', progres);
+	    	choise = "";
+	    	localStorage.setItem('prof', choise);
+	    	vnz = "";
+	    	localStorage.setItem('nz', vnz);
+	    	res = 0;
+	    	localStorage.setItem('bal', res);
+	    	documents = 0;
+			localStorage.setItem('docs', documents);
+		}
+	    });
 		jQuery('#back').on('click', function(){
 		if(progres == 4){
 			documents = 0;
 			localStorage.setItem('docs', documents);
 		}
 		if(progres == 3){
-			var res1 = 0;
-			localStorage.setItem('bal', res1);
+			var res = 0;
+			localStorage.setItem('bal', res);
 			jQuery('.cbal').html("");
 		}
 		if(progres == 2){
