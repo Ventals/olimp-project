@@ -702,3 +702,27 @@ body {
 	z-index: 70;
 	margin-left: -500%;
 }
+.renew {
+	display: block;
+	position: absolute;
+	padding-left: 1vw;
+	padding-right: 1vw;
+	background-color: #B61111;
+	border-radius: 0.8vw;
+	text-align: center;
+	color: white;
+	font-family: Century Gothic;
+	font-size: 2.3vw;
+	margin-left: -500%;
+	margin-top: 33%;
+	z-index: 80;
+	transition: 0.5s;
+}
+.renew:hover {
+	cursor: pointer;
+	background-color: #A31010;
+	transition: 0.5s;
+}
+.renew:active {
+	background-color: #730A0A;
+}

@@ -120,6 +120,7 @@ body {
 .docback:hover #doc5 {
 	width: 130%;
 	height: 130%;
+	background-image: url("images/doc5.png");
 	transform: scaleX(-1);
 	transition-property: transform, width, background-image;
     transition-duration: 0.5s, 0.5s;
@@ -129,6 +130,7 @@ body {
 .docback:hover #doc6 {
 	width: 130%;
 	height: 130%;
+	background-image: url("images/doc6.png");
 	transform: scaleX(-1);
 	transition-property: transform, width, background-image;
     transition-duration: 0.5s, 0.5s;
@@ -139,6 +141,7 @@ body {
 	width: 130%;
 	height: 130%;
 	transform: scaleX(-1);
+	background-image: url("images/doc7.png");
 	transition-property: transform, width, background-image;
     transition-duration: 0.5s, 0.5s;
     transition-timing-function: ease, ease-out;
@@ -148,6 +151,7 @@ body {
 	width: 130%;
 	height: 130%;
 	transform: scaleX(-1);
+	background-image: url("images/doc8.png");
 	transition-property: transform, width, background-image;
     transition-duration: 0.5s, 0.5s;
     transition-timing-function: ease, ease-out;
