@@ -347,7 +347,7 @@ body {
 	background-color: #00CED1;
 	transition: 0.5s;
 }
-.exit {
+.exit1 {
 	display: block;
 	position: absolute;
 	padding-left: 1.6vw;
@@ -361,11 +361,11 @@ body {
 	margin-top: 43%;
 	margin-left: 1%;
 }
-.exit:hover {
+.exit1:hover {
 	background-color: #A31010;
 	transition: 0.4s;
 }
-.exit:active {
+.exit1:active {
 	background-color: #730A0A;
 }
 #map {
