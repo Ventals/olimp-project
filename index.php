@@ -269,7 +269,12 @@
 			<div class="mesform">
 
 			</div>
-
+			<a href = "./">
+			<div class="renew">
+				Почати заново
+			</div>
+			</a>
+	
 			<div class="mom">
 				<ul class="talk">
 					
@@ -281,7 +286,7 @@
 
 				</ul>
 			</div>
-			<a href="">
+			<a href="VNZ.html">
 			<div class="back" id="tovnz">
 				До знань!
 			</div>
