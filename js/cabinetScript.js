@@ -35,9 +35,17 @@ jQuery('document').ready(function(){
 		jQuery('.out').css("margin-left", "80%");
 	});
 	jQuery('.bag').on('click', function(){
+		if(progres == 3){
 		jQuery('.bagscreen').css("margin-left", "20%");
 		jQuery('.out').css("margin-left", "49%");
 		jQuery('.out').css("margin-top", "1%");
+	} else {
+		if(progres < 3){
+			jQuery('.mesform').css("margin-left", "25%");
+			jQuery('.mesform').html("<h2>Етап недоступний!</h2> <br \/> На даний момент цей етап недоступний, пройдіть попередні етапи.");
+			jQuery('.out1').css("margin-left", "74%");
+		}
+	}
 	});
 	jQuery('.board').on('click', function(){
 		jQuery(this).css("transform", "scale(3, 3)");
@@ -58,6 +66,11 @@ jQuery('document').ready(function(){
 		jQuery('.mesform').css("margin-left", "25%");
 		jQuery('.mesform').html("<h2>Почати заново?</h2> <br \/> Ві вже пройшли цей етап, якщо хочете повернутись, натисніть кнопку <h3>Назад</h3> і ваш прогрес обнулиться, кожний клік по кнопці повертає на один етап.");
 		jQuery('.out1').css("margin-left", "74%");
+		if(progres < 1){
+			jQuery('.mesform').css("margin-left", "25%");
+			jQuery('.mesform').html("<h2>Етап недоступний!</h2> <br \/> На даний момент цей етап недоступний, пройдіть попередні етапи.");
+			jQuery('.out1').css("margin-left", "74%");
+		}
 	}
 	});
 
@@ -87,7 +100,13 @@ jQuery('document').ready(function(){
 		jQuery('.mesform').css("margin-left", "25%");
 		jQuery('.mesform').html("<h2>Іспити ЗНО</h2> <br \/> Натисніть на відповідну книжку щоб розпочати тестування, коли ви пройдете усі потрібні екзамени, натисніть на <h4>Розрахунок конкурсного балу</h4>, для того щоб підрахувати ваш бал для вступу в навчальний заклад. Потрібні екзамени для вашої професії вказані на дошці.");
 		jQuery('.out1').css("margin-left", "74%");
-	}  
+	}  else {
+		if(progres < 2){
+			jQuery('.mesform').css("margin-left", "25%");
+			jQuery('.mesform').html("<h2>Етап недоступний!</h2> <br \/> На даний момент цей етап недоступний, пройдіть попередні етапи.");
+			jQuery('.out1').css("margin-left", "74%");
+		}
+	}
 	});
 	jQuery('#next1').on('click', function(){
 		jQuery(this).css("margin-left", "-500%");
