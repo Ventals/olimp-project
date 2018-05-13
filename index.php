@@ -135,12 +135,13 @@
 						<a class="twitter-share-button"
   							href="https://twitter.com/share"
   							data-size="large"
+  							data-lang="uk"
   							data-text="Освітній портал для вступників"
   							data-url="https://olimp-project.herokuapp.com/"
   							data-hashtags=""
   							data-via=""
   							data-related="twitterapi,twitter">
-							Tweet
+							<li class="tw">
 </a>
 						<a href="https://myaccount.google.com/?hl=ru"><li class="goo"></li></a>
 					</div>
