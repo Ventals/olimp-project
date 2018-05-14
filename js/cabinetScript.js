@@ -198,6 +198,7 @@ jQuery('document').ready(function(){
 		if(flag1 == "1"){
 		jQuery('.mom').css("margin-left", "10%");
 		jQuery('.talk').css("margin-left", "80%");
+		jQuery('.mom').css("transition-delay", "3s");
 		jQuery('.talk').html("Привіт, я бачу ти вже обрав собі професію, молодець, тато щось хотів тобі сказати <br\/> (натисніть щоб продовжити)");
 		jQuery('.talk').on('click', function(){
 		jQuery(this).css("margin-left", "-500%");
