@@ -442,7 +442,7 @@ body {
 	margin-top: 17%;
 	z-index: 70;
 	transition: 2s;
-	transition-delay: 3s;
+	transition-delay: 0s;
 }
 .talk {
 	position: absolute;
