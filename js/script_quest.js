@@ -6,7 +6,7 @@ jQuery('document').ready(function(){
 		jQuery('.mesform').css("margin-left", "-500%");
 		jQuery(this).css("margin-left", "-500%");
 	});
-	var documents = 0;
+	documents = 0;
 	localStorage.setItem('docs', documents);
 	jQuery('.table').delegate('.need', 'click', function(){
 		documents = documents + 1;
