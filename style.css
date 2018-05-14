@@ -97,9 +97,6 @@ body {
 	background-image: url("images/btn1h.jpg");
 	transition: 0.4s;
 }
-.in:active {
-	background-image: url("images/btn1a.jpg");
-}
 .reg {
 	display: block;
 	background-image: url("images/btn2.jpg");
@@ -120,9 +117,6 @@ body {
 .red:hover {
 	background-image: url("images/btn2h.jpg");
 	transition: 0.4s;
-}
-.reg:active {
-	background-image: url("images/btn2a.jpg");
 }
 .text {
 	font-family: Century Gothic;
