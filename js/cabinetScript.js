@@ -1,4 +1,6 @@
 jQuery('document').ready(function(){
+	var documents = 0;
+	localStorage.setItem('docs', documents);
 	var progres;
 	if(localStorage.getItem('pers_progres') > 0){
 		progres = localStorage.getItem('pers_progres');
