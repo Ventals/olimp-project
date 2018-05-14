@@ -1,5 +1,6 @@
 jQuery('document').ready(function(){
 	jQuery('button').on('click', function(){
+		if(localStorage.getItem('pers_progres') >= 2){
 		var bal1, bal2, bal3, bal4, bal5, res;
 		res = 0;
 		localStorage.setItem('bal', res);
@@ -63,6 +64,7 @@ jQuery('document').ready(function(){
 		res = bal1 + bal2 + bal3 + bal4 + bal5;
 		localStorage.setItem('bal', res);
 		jQuery('#res').val(res);
+	}
 	}
 	});
 	jQuery('.table').on('click', function(){
