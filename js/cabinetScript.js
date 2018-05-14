@@ -369,7 +369,7 @@ jQuery('document').ready(function(){
 			localStorage.setItem('prof', choise);
 			jQuery('.prof').html(choise);
 		}
-		if(localStorage.getItem('pers-progres') >= 0){
+		if(localStorage.getItem('pers_progres') >= 0){
 		progres = progres - 1;
 		localStorage.setItem('pers_progres', progres);
 	}
