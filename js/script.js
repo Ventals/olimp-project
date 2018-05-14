@@ -22,22 +22,6 @@ for (var i = 0; i < linkNav.length; i++) {
         }
     }, false);
 }
-	jQuery('.in1').on('click', function(){
-		jQuery(this).css("background-image", "url(images/ina.png)");
-		jQuery(this).css("height", "3.3vw");
-		jQuery('.reg1').css("background-image", "url(images/reg.png)");
-		jQuery('.reg1').css("height", "3vw");
-		jQuery('.form').css("margin-left", "-500%");
-		jQuery('.out').css("margin-left", "-500%");
-	});
-	jQuery('.reg1').on('click', function(){
-		jQuery(this).css("background-image", "url(images/rega.png)");
-		jQuery(this).css("height", "3.3vw");
-		jQuery('.in1').css("background-image", "url(images/in.png)");
-		jQuery('.in1').css("height", "3vw");
-		jQuery('.form').css("margin-left", "0");
-		jQuery('.out').css("margin-left", "40%");
-	});
 	jQuery('.btn1').on('click', function(){
 		jQuery(this).css("transform", "scale(1.5, 1.5)");
 		jQuery(this).css("opacity", "1");
