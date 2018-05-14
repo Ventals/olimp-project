@@ -463,12 +463,12 @@ body {
 	display: block;
 	position: absolute;
 	width: 15%;
-	height: 33vw;
+	height: 36vw;
 	background-image: url("images/dad.png");
 	background-size: 65%;
 	background-repeat: no-repeat;
 	margin-left: -500%;
-	margin-top: 14%;
+	margin-top: 12%;
 	z-index: 70;
 	transition: 2s;
 }
@@ -701,6 +701,7 @@ body {
 #tovnz {
 	z-index: 70;
 	margin-left: -500%;
+	margin-top: 15%;
 }
 .renew {
 	display: block;
