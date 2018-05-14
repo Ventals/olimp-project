@@ -1,11 +1,12 @@
 jQuery('document').ready(function(){
-	var documents = 0;
-	localStorage.setItem('docs', documents);
+	var documents;
 	var progres;
 	if(localStorage.getItem('pers_progres') > 0){
 		progres = localStorage.getItem('pers_progres');
 	} else {
 		progres = 0;
+		documents = 0;
+		localStorage.setItem('docs', documents);
 	}
 	if(progres == 0){
 	jQuery('.mesform').css("margin-left", "25%");
