@@ -65,7 +65,8 @@ jQuery('document').ready(function(){
 		localStorage.setItem('bal', res);
 		jQuery('#res').val(res);
 	}
-	}
+	} else {
+		alert("На даний момент етап недоступний, пройдіть попередні етапи.");
 	});
 	jQuery('.table').on('click', function(){
 		jQuery('.baltab').css("margin-left", "60%");
