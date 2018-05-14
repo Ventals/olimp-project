@@ -246,7 +246,7 @@
 				<script
 					src = "js/MapInCabinetScript.js"> </script>
 				<script async defer
-					 src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&language=uk&region=UA"> </script>
+					 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhB6Pq1U-G2R70VstNVDnESvSCePbjQd0&callback=initMap&language=uk&region=UA"> </script>
 			</div>
 
 			<div class="znoscreen">
