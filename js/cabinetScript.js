@@ -167,7 +167,6 @@ jQuery('document').ready(function(){
 		});
 		jQuery('.talk1').on('click', function(){
 			jQuery('#tovnz').css("margin-left", "68%");
-			jQuery('#tovnz').css("margin-top", "18%");
 		});
 	}
 
